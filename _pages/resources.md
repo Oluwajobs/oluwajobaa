@@ -30,7 +30,7 @@ Networks are basic structures underlying many natural, social and engineered sys
 The WUDAPT project is a community-based project to gather a census of consistent urban land use land classes maps for cities around the world. [Get LCZ maps](https://wudapt.cs.purdue.edu/wudaptTools/default/getlcz). |
 
 <figure>
-  <img src="/assets/images/Stat_Wars.png"  alt="Group_pic">
+  <img src="/assets/images/Stat_Wars.png"  alt="stat">
   <figcaption>Synthesis Workshop (2017) at TU,Dresden and UFZ, Magdeburg, Germany (<a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a>)</figcaption>
 </figure>
 
