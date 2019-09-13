@@ -42,33 +42,34 @@ I am extremely passionate about data visualization and visual story-telling. Her
 
 [**Complexity Explorables**](http://www.complexity-explorables.org/): Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest. |
 
-[NetLogo](https://ccl.northwestern.edu/netlogo/): Agent-based modeling visualized. |
+[**NetLogo**](https://ccl.northwestern.edu/netlogo/): Agent-based modeling visualized. |
 
-[How much hotter is your hometown?](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html): On climate change communication. |
+[**How much hotter is your hometown?**](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html): On climate change communication. |
 
 <!-- [Hottest year on record](https://www.bloomberg.com/graphics/hottest-year-on-record/) -->
 
 
 ## Remote Sensing and Geospatial Analysis
 
-If you deal with geospatial analysis and haven't used [Google Earth Engine](https://earthengine.google.com/) yet, please do! |
+[**Google Earth Engine**](https://earthengine.google.com/): If you deal with geospatial analysis and haven't used it yet, please do! |
 
-
+<!--
 ## Computational resources
-
-
+## WRF
+## Landsat etc
+-->
 
 ## Managing Grad-Life
 
-[The art of spaced repetition](https://ncase.me/remember/)  |
+[**The art of spaced repetition**](https://ncase.me/remember/)  |
 
-[Calendar. Not to-do lists.](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post.|
+[**Calendar. Not to-do lists.**](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post.|
 
-[WorkFlowy](https://workflowy.com/): Instead, I like to make lists! |
+[**WorkFlowy**](https://workflowy.com/): Instead, I like to make lists! |
 
 ## Random cool links
 
-[Loopy](https://ncase.me/loopy/): A tool for thinking in systems |
+[**Loopy**](https://ncase.me/loopy/): A tool for thinking in systems |
 
 
 ![](/assets/images/Stat_Wars.png)
