@@ -24,8 +24,8 @@ github_username: Anamika255
 minimal_mistakes_skin: neon
 search: true
 
-#logo: "/assets/images/LOGO2.png"
-#masthead_title: " "
+logo: "/assets/images/LOGO2.png"
+masthead_title: " "
 
 
 # Build settings
