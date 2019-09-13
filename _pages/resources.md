@@ -32,35 +32,40 @@ The WUDAPT project is a community-based project to gather a census of consistent
 
 I am extremely passionate about data visualization and visual story-telling. Here are some compelling narratives that inspire me.
 
-* This is a story of how harmless choices can make a harmful world. Based on Schelling's model of segregation, this playable website neatly explains why today's society seems demographically segregated: [Parable of the Polygons](https://ncase.me/polygons/) |
-* Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest: [Complexity Explorables](http://www.complexity-explorables.org/) |
-* Agent-based modeling visualized: [NetLogo](https://ccl.northwestern.edu/netlogo/) |
-* A tool for thinking in systems: [Loopy](https://ncase.me/loopy/) |
-* [Hottest year on record](https://www.bloomberg.com/graphics/hottest-year-on-record/) |
+This is a story of how harmless choices can make a harmful world. Based on Schelling's model of segregation, this playable website neatly explains why today's society seems demographically segregated: [Parable of the Polygons](https://ncase.me/polygons/) |
 
-### Computational resources
+How small-interactions can lead to large-scale organization: [Play with Fireflies](https://ncase.me/fireflies/) |
 
-* If you deal with geospatial analysis and haven't used [Google Earth Engine](https://earthengine.google.com/) yet, please do! |
+Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest: [Complexity Explorables](http://www.complexity-explorables.org/) |
 
-### Managing Grad-Life
+Agent-based modeling visualized: [NetLogo](https://ccl.northwestern.edu/netlogo/) |
 
-* [The art of spaced repetition](https://ncase.me/remember/)
-* When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post: [Calendar. Not to-do lists.](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd).
-* Instead, I like to make lists! Check out [WorkFlowy](https://workflowy.com/)
+On climate change communication - [How much hotter is your hometown?](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html) and [Hottest year on record](https://www.bloomberg.com/graphics/hottest-year-on-record/) |
+
+
+## Remote Sensing and Geospatial Analysis
+
+If you deal with geospatial analysis and haven't used [Google Earth Engine](https://earthengine.google.com/) yet, please do! |
+
+
+## Computational resources
+
+
+
+## Managing Grad-Life
+
+[The art of spaced repetition](https://ncase.me/remember/)  |
+
+When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post: [Calendar. Not to-do lists.](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd) |
+
+Instead, I like to make lists! Check out [WorkFlowy](https://workflowy.com/) |
+
+## Random cool links
+
+A tool for thinking in systems: [Loopy](https://ncase.me/loopy/) |
+
 
 ![](/assets/images/Stat_Wars.png)
-
-<!--
-### Unordered -- Unordered -- Ordered
-
-* unordered item
-* unordered item
-  * unordered
-  * unordered
-    1. **ordered item**
-    2. **ordered item**
-* unordered item
-* unordered item
 
 ### Task Lists
 
