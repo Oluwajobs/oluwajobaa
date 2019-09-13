@@ -9,7 +9,7 @@ main:
 #    url: /presentations/
   - title: "Projects"
     url: /projects/
-#  - title: "Resources"
-#    url: /resources/
+  - title: "Resources"
+    url: /resources/
   - title: "Music"
     url: /music/
