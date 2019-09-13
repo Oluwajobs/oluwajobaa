@@ -36,13 +36,13 @@ The WUDAPT project is a community-based project to gather a census of consistent
 
 I am extremely passionate about data visualization and visual story-telling. Here are some compelling narratives that inspire me.
 
-[Parable of the Polygons](https://ncase.me/polygons/){: .btn .btn--success}: This is a story of how harmless choices can make a harmful world. Based on Schelling's model of segregation, this playable website neatly explains why today's society seems demographically segregated.{: .notice--info} |
+[Parable of the Polygons](https://ncase.me/polygons/){: .btn .btn--success .btn--large}: This is a story of how harmless choices can make a harmful world. Based on Schelling's model of segregation, this playable website neatly explains why today's society seems demographically segregated.|
 
-[Fireflies](https://ncase.me/fireflies/){: .btn .btn--success}: How small-interactions can lead to large-scale organization. |
+[Fireflies](https://ncase.me/fireflies/){: .btn .btn--success .btn--large}: How small-interactions can lead to large-scale organization. |
 
-[Complexity Explorables](http://www.complexity-explorables.org/)(#link){: .btn .btn--success}: Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest. |
+[Complexity Explorables](http://www.complexity-explorables.org/)(#link){: .btn .btn--success .btn--large}: Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest. |
 
-[NetLogo](https://ccl.northwestern.edu/netlogo/){: .btn .btn--success}: Agent-based modeling visualized. |
+[NetLogo](https://ccl.northwestern.edu/netlogo/){: .btn .btn--success .btn--large}: Agent-based modeling visualized. |
 
 [How much hotter is your hometown?](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html): On climate change communication. |
 
@@ -51,7 +51,7 @@ I am extremely passionate about data visualization and visual story-telling. Her
 
 ## Remote Sensing and Geospatial Analysis
 
-If you deal with geospatial analysis and haven't used [Google Earth Engine](https://earthengine.google.com/) yet, please do!{: .notice--info} |
+If you deal with geospatial analysis and haven't used [Google Earth Engine](https://earthengine.google.com/) yet, please do! |
 
 
 ## Computational resources
@@ -62,7 +62,7 @@ If you deal with geospatial analysis and haven't used [Google Earth Engine](http
 
 [The art of spaced repetition](https://ncase.me/remember/)  |
 
-[Calendar. Not to-do lists.](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post. {: .notice--info} | 
+[Calendar. Not to-do lists.](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post.| 
 
 [WorkFlowy](https://workflowy.com/): Instead, I like to make lists! |
 
