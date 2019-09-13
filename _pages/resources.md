@@ -19,12 +19,12 @@ Some useful tools I have built for my research. Any suggestions for improvement 
 
 Some of the awesome research groups that I have had the pleasure to work with. Check them out and get in touch if you want to collaborate, or work with, or be a part of, or just chat.
 
-* [Complex Networks Synthesis group](https://www.ufz.de/cawr/index.php?en=43129)
-
 <figure>
   <img src="/assets/images/TUD_pic.png" alt="">
-  <figcaption>Synthesis Workshop (2017) at TU,Dresden and UFZ, Magdeburg, Germany. <a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a></figcaption>
+  <figcaption>Synthesis Workshop (2017) at TU,Dresden and UFZ, Magdeburg, Germany (<a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a>)</figcaption>
 </figure>
+
+* [Complex Networks Synthesis group](https://www.ufz.de/cawr/index.php?en=43129)
 
 <!-- Extre link: [Complex Networks Synthesis Workshops](https://www.ufz.de/cawr/index.php?en=42471) -->
 
