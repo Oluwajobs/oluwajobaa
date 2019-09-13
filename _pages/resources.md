@@ -30,7 +30,7 @@ gallery:
     alt: "placeholder image 2"
     title: "Image 2 title caption"
 {% include gallery caption="Synthesis Workshop (2017) at TU,Dresden and UFZ, Magdeburg, Germany. <a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a>" %}
--->
+
 
 * [Complex Networks Synthesis group](https://www.ufz.de/cawr/index.php?en=43129)
 
