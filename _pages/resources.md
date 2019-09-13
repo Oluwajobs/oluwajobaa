@@ -51,7 +51,7 @@ I am extremely passionate about data visualization and visual story-telling. Her
 
 ## Remote Sensing and Geospatial Analysis
 
-[**Google Earth Engine**](https://earthengine.google.com/): If you deal with geospatial analysis and haven't used it yet, please do! |
+[**Google Earth Engine**](https://earthengine.google.com/): If you deal with satellite data and geospatial analysis, give this a test drive |
 
 <!--
 ## Computational resources
