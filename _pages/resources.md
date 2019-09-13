@@ -29,7 +29,7 @@ The WUDAPT project is a community-based project to gather a census of consistent
 
 <figure>
   <img src="/assets/images/TUD-pic.png"  alt="Group">
-  <figcaption>Synthesis Workshop (2017) at TU,Dresden and UFZ, Magdeburg, Germany (<a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a>)</figcaption>
+  <figcaption>Synthesis Workshop (2016) at TU,Dresden, Germany (<a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a>)</figcaption>
 </figure>
 <!-- Extre link: [Complex Networks Synthesis Workshops](https://www.ufz.de/cawr/index.php?en=42471) -->
 
