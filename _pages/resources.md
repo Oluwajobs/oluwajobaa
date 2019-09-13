@@ -11,12 +11,12 @@ toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
 gallery:
   - url: /assets/images/TUD-pic.png
     image_path: /assets/images/TUD-pic.png
-    alt: "TUD"
-    title: "TUD"
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
   - url: /assets/images/UFZ-pic.png
     image_path: /assets/images/UFZ-pic.png
-    alt: "UFZ"
-    title: "UFZ"
+    alt: "placeholder image 2"
+    title: "Image 2 title caption"
 ---
 
 Some useful tools I have built for my research. Any suggestions for improvement will be highly appreciated.
@@ -27,18 +27,17 @@ Some useful tools I have built for my research. Any suggestions for improvement 
 ### Research groups
 
 Some of the awesome research groups that I have had the pleasure to work with. Check them out and get in touch if you want to collaborate, or work with, or be a part of, or just chat.
-
+<!--
 {% include gallery caption="Synthesis Workshop (2017) at TU,Dresden and UFZ, Magdeburg, Germany. <a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a>" %}
+-->
 
-[Complex Networks Synthesis group](https://www.ufz.de/cawr/index.php?en=43129)
+* [Complex Networks Synthesis group](https://www.ufz.de/cawr/index.php?en=43129)
 
 Networks are basic structures underlying many natural, social and engineered systems in our environment. Technical networks are e.g. streets, power grids, communication, sewer and water supply networks, while natural networks comprise systems as diverse as river networks, pore structures in the unsaturated zone, food webs and atmospheric transport structures. We study the dynamics and inter-relatedness of these networks. This is an international group of researchers from [Purdue University](www.purdue.edu), [University of Florida, Gainesville](http://www.ufl.edu/), [Helmholtz Centre of Environmental Research (UFZ)](https://www.ufz.de/cawr/), and [Technische University, Dresden](https://tu-dresden.de/). We meet twice a year in either Germany or USA in the form of [Complex Networks Synthesis Workshops](https://www.ufz.de/cawr/index.php?en=42471).
 
-[World Urban Database and Access Portal Tools](http://www.wudapt.org/)
+* [World Urban Database and Access Portal Tools](http://www.wudapt.org/)
 
-
-
-[Get LCZ maps](https://wudapt.cs.purdue.edu/wudaptTools/default/getlcz)
+The WUDAPT project is a community-based project to gather a census of consistent urban land use land classes maps for cities around the world. [Get LCZ maps](https://wudapt.cs.purdue.edu/wudaptTools/default/getlcz).
 
 
 
