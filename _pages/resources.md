@@ -21,7 +21,10 @@ Some of the awesome research groups that I have had the pleasure to work with. C
 
 * [Complex Networks Synthesis group](https://www.ufz.de/cawr/index.php?en=43129)
 
-Networks are basic structures underlying many natural, social and engineered systems in our environment. Technical networks are e.g. streets, power grids, communication, sewer and water supply networks, while natural networks comprise systems as diverse as river networks, pore structures in the unsaturated zone, food webs and atmospheric transport structures. We study the dynamics and inter-relatedness of these networks. This is an international group of researchers from [Purdue University](www.purdue.edu), [University of Florida, Gainesville](http://www.ufl.edu/), [Helmholtz Centre of Environmental Research (UFZ)](https://www.ufz.de/cawr/), and [Technische University, Dresden](https://tu-dresden.de/). We meet twice a year in either Germany or USA in the form of [Complex Networks Synthesis Workshops](https://www.ufz.de/cawr/index.php?en=42471). |
+![](/assets/images/TUD_pic.png)
+<!-- Extre link: [Complex Networks Synthesis Workshops](https://www.ufz.de/cawr/index.php?en=42471) -->
+
+Networks are basic structures underlying many natural, social and engineered systems in our environment. Technical networks are e.g. streets, power grids, communication, sewer and water supply networks, while natural networks comprise systems as diverse as river networks, pore structures in the unsaturated zone, food webs and atmospheric transport structures. We study the dynamics and inter-relatedness of these networks. This is an international group of researchers from Purdue University, University of Florida, Gainesville, [Helmholtz Centre of Environmental Research (UFZ)](https://www.ufz.de/cawr/), and Technische University, Dresden who meet twice a year in either Germany or USA. |
 
 * [World Urban Database and Access Portal Tools](http://www.wudapt.org/)
 
@@ -32,15 +35,16 @@ The WUDAPT project is a community-based project to gather a census of consistent
 
 I am extremely passionate about data visualization and visual story-telling. Here are some compelling narratives that inspire me.
 
-This is a story of how harmless choices can make a harmful world. Based on Schelling's model of segregation, this playable website neatly explains why today's society seems demographically segregated: [Parable of the Polygons](https://ncase.me/polygons/) |
+[Parable of the Polygons](https://ncase.me/polygons/): This is a story of how harmless choices can make a harmful world. Based on Schelling's model of segregation, this playable website neatly explains why today's society seems demographically segregated.|
 
-How small-interactions can lead to large-scale organization: [Play with Fireflies](https://ncase.me/fireflies/) |
+[Fireflies](https://ncase.me/fireflies/): How small-interactions can lead to large-scale organization. |
 
-Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest: [Complexity Explorables](http://www.complexity-explorables.org/) |
+[Complexity Explorables](http://www.complexity-explorables.org/): Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest. |
 
-Agent-based modeling visualized: [NetLogo](https://ccl.northwestern.edu/netlogo/) |
+[NetLogo](https://ccl.northwestern.edu/netlogo/): Agent-based modeling visualized. |
 
-On climate change communication - [How much hotter is your hometown?](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html) and [Hottest year on record](https://www.bloomberg.com/graphics/hottest-year-on-record/) |
+[How much hotter is your hometown?](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html): On climate change communication. |
+<!-- [Hottest year on record](https://www.bloomberg.com/graphics/hottest-year-on-record/) -->
 
 
 ## Remote Sensing and Geospatial Analysis
@@ -56,19 +60,13 @@ If you deal with geospatial analysis and haven't used [Google Earth Engine](http
 
 [The art of spaced repetition](https://ncase.me/remember/)  |
 
-When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post: [Calendar. Not to-do lists.](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd) |
+[Calendar. Not to-do lists.](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post. |
 
-Instead, I like to make lists! Check out [WorkFlowy](https://workflowy.com/) |
+[WorkFlowy](https://workflowy.com/): Instead, I like to make lists! |
 
 ## Random cool links
 
-A tool for thinking in systems: [Loopy](https://ncase.me/loopy/) |
+[Loopy](https://ncase.me/loopy/): A tool for thinking in systems |
 
 
 ![](/assets/images/Stat_Wars.png)
-
-### Task Lists
-
-- [x] Finish my changes
-- [ ] Push my commits to Gi
--->
