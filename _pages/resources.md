@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: single
 sitemap: true
 collection: resources
 permalink: /resources/
