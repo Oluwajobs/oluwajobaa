@@ -11,9 +11,9 @@ toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
 Some useful tools I have built for my research. Any suggestions for improvement will be highly appreciated.
-
 * [WRF domain visualizer in Google Earth Engine](https://code.earthengine.google.com/b49019fd1f97e7313b143992a717726c)
 * [Land Surface Temperature from Landsat images](https://code.earthengine.google.com/36460b55b5c8688d50e27cbb073a0ef9)
+{: .notice--success}
 
 ## Research groups
 
@@ -37,13 +37,13 @@ The WUDAPT project is a community-based project to gather a census of consistent
 
 I am extremely passionate about data visualization and visual story-telling. Here are some compelling narratives that inspire me.
 
-[Parable of the Polygons](https://ncase.me/polygons/): This is a story of how harmless choices can make a harmful world. Based on Schelling's model of segregation, this playable website neatly explains why today's society seems demographically segregated.|
+[Parable of the Polygons](https://ncase.me/polygons/)[Green Button Text](#link){: .btn .btn--success}: This is a story of how harmless choices can make a harmful world. Based on Schelling's model of segregation, this playable website neatly explains why today's society seems demographically segregated.| {: .notice--info}
 
-[Fireflies](https://ncase.me/fireflies/): How small-interactions can lead to large-scale organization. |
+[Fireflies](https://ncase.me/fireflies/)[Green Button Text](#link){: .btn .btn--success}: How small-interactions can lead to large-scale organization. |
 
-[Complexity Explorables](http://www.complexity-explorables.org/): Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest. |
+[Complexity Explorables](http://www.complexity-explorables.org/)[Green Button Text](#link){: .btn .btn--success}: Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest. |
 
-[NetLogo](https://ccl.northwestern.edu/netlogo/): Agent-based modeling visualized. |
+[NetLogo](https://ccl.northwestern.edu/netlogo/)[Green Button Text](#link){: .btn .btn--success}: Agent-based modeling visualized. |
 
 [How much hotter is your hometown?](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html): On climate change communication. |
 
@@ -52,7 +52,7 @@ I am extremely passionate about data visualization and visual story-telling. Her
 
 ## Remote Sensing and Geospatial Analysis
 
-If you deal with geospatial analysis and haven't used [Google Earth Engine](https://earthengine.google.com/) yet, please do! |
+If you deal with geospatial analysis and haven't used [Google Earth Engine](https://earthengine.google.com/) yet, please do! | {: .notice--info}
 
 
 ## Computational resources
@@ -63,7 +63,7 @@ If you deal with geospatial analysis and haven't used [Google Earth Engine](http
 
 [The art of spaced repetition](https://ncase.me/remember/)  |
 
-[Calendar. Not to-do lists.](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post. |
+[Calendar. Not to-do lists.](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post. | {: .notice--info}
 
 [WorkFlowy](https://workflowy.com/): Instead, I like to make lists! |
 
