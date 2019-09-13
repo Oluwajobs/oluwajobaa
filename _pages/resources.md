@@ -8,15 +8,6 @@ toc: true
 toc_sticky: true
 toc_label: "Quick Links"
 toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
-gallery:
-  - url: /assets/images/TUD-pic.png
-    image_path: /assets/images/TUD-pic.png
-    alt: "placeholder image 1"
-    title: "Image 1 title caption"
-  - url: /assets/images/UFZ-pic.png
-    image_path: /assets/images/UFZ-pic.png
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
 ---
 
 Some useful tools I have built for my research. Any suggestions for improvement will be highly appreciated.
@@ -27,7 +18,17 @@ Some useful tools I have built for my research. Any suggestions for improvement 
 ### Research groups
 
 Some of the awesome research groups that I have had the pleasure to work with. Check them out and get in touch if you want to collaborate, or work with, or be a part of, or just chat.
+
 <!--
+gallery:
+  - url: /assets/images/TUD-pic.png
+    image_path: /assets/images/TUD-pic.png
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/UFZ-pic.png
+    image_path: /assets/images/UFZ-pic.png
+    alt: "placeholder image 2"
+    title: "Image 2 title caption"
 {% include gallery caption="Synthesis Workshop (2017) at TU,Dresden and UFZ, Magdeburg, Germany. <a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a>" %}
 -->
 

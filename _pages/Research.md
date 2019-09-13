@@ -22,5 +22,4 @@ This page is under construction
   <img src="/assets/images/World_Map.png" alt="">
 </figure>
 
-[Synthesis Group](https://www.ufz.de/cawr/index.php?en=43133)
 -->
