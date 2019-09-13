@@ -21,7 +21,7 @@ description: This is the website of Anamika Shreevastava. A doctoral student at 
   # Google search results) and in your feed.xml site description.
 twitter_username: Anamika255
 github_username: Anamika255
-minimal_mistakes_skin: neon
+minimal_mistakes_skin: contrast
 search: true
 
 logo: "/assets/images/LOGO2.png"
