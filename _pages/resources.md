@@ -57,11 +57,9 @@ I am extremely passionate about data visualization and visual story-telling. Her
 ## Computational resources
 ## WRF
 ## Landsat etc
--->
-
 ## Random cool links
-
 [**Loopy**](https://ncase.me/loopy/): A tool for thinking in systems |
+-->
 
 ## Managing Grad-Life
 
