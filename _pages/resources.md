@@ -21,7 +21,11 @@ Some of the awesome research groups that I have had the pleasure to work with. C
 
 * [Complex Networks Synthesis group](https://www.ufz.de/cawr/index.php?en=43129)
 
-![](/assets/images/TUD_pic.png)
+<figure>
+  <img src="/assets/images/TUD_pic.png" alt="">
+  <figcaption>Synthesis Workshop (2017) at TU,Dresden and UFZ, Magdeburg, Germany. <a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a></figcaption>
+</figure>
+
 <!-- Extre link: [Complex Networks Synthesis Workshops](https://www.ufz.de/cawr/index.php?en=42471) -->
 
 Networks are basic structures underlying many natural, social and engineered systems in our environment. Technical networks are e.g. streets, power grids, communication, sewer and water supply networks, while natural networks comprise systems as diverse as river networks, pore structures in the unsaturated zone, food webs and atmospheric transport structures. We study the dynamics and inter-relatedness of these networks. This is an international group of researchers from Purdue University, University of Florida, Gainesville, [Helmholtz Centre of Environmental Research (UFZ)](https://www.ufz.de/cawr/), and Technische University, Dresden who meet twice a year in either Germany or USA. |
