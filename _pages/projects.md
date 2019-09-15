@@ -16,4 +16,4 @@ entries_layout: grid
 classes: wide
 -->
 
-This page is under construction.
+![](assets/images/webPageConstruction.jpg)

@@ -8,10 +8,14 @@ permalink: /research/
 author_profile: true
 ---
 
+
+![](assets/images/webPageConstruction.jpg)
+
+<!--
 <figure style="width: 450px" class="align-right">
   <img src="/assets/images/Research-Venn-white.png" alt="Research Venn">
 </figure>
-
+-->
 
 
 <!--
