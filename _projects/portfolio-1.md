@@ -1,6 +1,7 @@
 ---
 title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/assets/images/Networks.jpg'>"
+excerpt: "Short description of portfolio item number 1"
+  overlay_image: assets/city-pics/zach-miles-Y84-eo8drzk-unsplash.jpg
 collection: portfolio
 ---
 
