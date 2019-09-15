@@ -110,7 +110,7 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  projects:
     output: true
     permalink: /:collection/:path/
   portfolio:
