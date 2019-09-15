@@ -50,6 +50,19 @@ Peek into how most of our Purdue evenings and weekends look like.
 
 <br/>
 
+Some of the performances that we managed to find videos of. Apologies for the terrible audio quality.
+
+**A mix of Beastly by Vulfpeck and Aye Udi Udi by AR Rahman**
+{% include video id="4SLSowxnYkU" provider="youtube" %}
+
+<br/>
+
+**Lag Jaa gale and I can't help falling in love**
+{% include video id="OSuo7QT4bJc" provider="youtube" %}
+
+<br/>
+
+
 For more, check out my band's [YouTube Channel](https://www.youtube.com/channel/UCBlDeRAwAAP_SeVPqmVi_HQ)
 
 During my undergrad in India, I led the [IIT Roorkee Music team](https://www.youtube.com/channel/UCUAm7WhqNFUytNPs6VaUK-Q).

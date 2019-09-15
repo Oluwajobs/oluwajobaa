@@ -16,4 +16,4 @@ entries_layout: grid
 classes: wide
 -->
 
-![](assets/images/webPageConstruction.jpg)
+![](/assets/images/webPageConstruction.jpg)
