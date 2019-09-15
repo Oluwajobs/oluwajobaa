@@ -7,4 +7,11 @@ author_profile: true
 entries_layout: grid
 ---
 
-![](/assets/images/webPageConstruction.jpg)
+Testing update 2.
+
+{% include base_path %}
+
+
+{% for post in site.projects %}
+  {% include archive-single.html %}
+{% endfor %}
