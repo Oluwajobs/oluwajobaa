@@ -9,7 +9,7 @@ author_profile: true
 ---
 
 
-![](assets/images/webPageConstruction.jpg)
+![](/assets/images/webPageConstruction.jpg)
 
 <!--
 <figure style="width: 450px" class="align-right">
