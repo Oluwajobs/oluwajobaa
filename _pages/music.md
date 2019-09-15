@@ -3,7 +3,7 @@ permalink: /music/
 layout: collection
 collection: music
 title: "Music"
-author_profile: true
+author_profile: false
 gallery:
   - url: /assets/music/Me-Prash.jpg
     image_path: /assets/music/Me-Prash.jpg
