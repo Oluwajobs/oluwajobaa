@@ -62,6 +62,9 @@ Some of the performances that we managed to find videos of. Apologies for the te
 
 <br/>
 
+<figure class="align-center">
+  <img src="/assets/music/Tatvam_old.jpg" alt="">
+</figure>
 
 For more, check out my band's [YouTube Channel](https://www.youtube.com/channel/UCBlDeRAwAAP_SeVPqmVi_HQ)
 
