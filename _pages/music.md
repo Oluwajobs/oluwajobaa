@@ -27,7 +27,7 @@ I love to perform live music, and I am the guitarist and vocalist of an indo-wes
 <!--{% include gallery class="full" caption="Bandmates and me" %}-->
 
 <figure style="width: 500px" class="align-left">
-  <img src="/assets/music/Tatvam_new.jpg" alt="">
+  <img src="/assets/music/Guitar_focus.jpg" alt="">
 </figure>
 
 <figure style="width: 392px" class="align-right">
