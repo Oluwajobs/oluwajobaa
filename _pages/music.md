@@ -55,7 +55,7 @@ For more, check out my band's [YouTube Channel](https://www.youtube.com/channel/
 During my undergrad in India, I led the [IIT Roorkee Music team](https://www.youtube.com/channel/UCUAm7WhqNFUytNPs6VaUK-Q).
 
 
-<figure>
+<figure style="width: 500px" class="align-left">
   <img src="/assets/music/IITR.png" alt="">
   <figcaption>Photo from IIT Roorkee show - Dhun. Photo Credits: <a href="https://www.instagram.com/fawkesphotostream/">Divya Agrawal</a></figcaption>
 </figure>
