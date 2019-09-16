@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: collection
 title: "Assorted collection of other projects"
 permalink: /projects/
 collection: portfolio
