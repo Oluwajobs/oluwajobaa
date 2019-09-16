@@ -2,7 +2,7 @@
 layout: single
 sitemap: true
 title: "Item Anamika"
-excerpt: "Short description of portfolio item number 2 <img src="/assets/city-pics/City_NYC.jpg" alt="Failed">"
+excerpt: "Short description of portfolio item number 2"
 collection: portfolio
 author_profile: true
 ---
