@@ -4,7 +4,6 @@ sitemap: true
 title: "Item Anamika 4"
 excerpt: "<img src='/assets/city-pics/City_NYC.jpg'>"
 collection: portfolio
-entries_layout: grid
 author_profile: false
 ---
 
