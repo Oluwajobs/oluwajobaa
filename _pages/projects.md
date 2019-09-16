@@ -10,12 +10,10 @@ toc_icon: "list-ul"
 ---
 
 
-## C-40 Testing
+## [C-40 Testing](https://anamika255.github.io/portfolio/C40-Cities/)
 
 100 climate proofing strategies were implemented by the global consortium of C40 cities. How did those strategies fare on a resilience landscape?
 <img src='/assets/images/C40-header.png'>
-
-[Learn More](https://anamika255.github.io/portfolio/C40-Cities/){: .btn .btn--success}
 
 
 Here's a collection of my projects. I will try to keep the codes available on Github.
