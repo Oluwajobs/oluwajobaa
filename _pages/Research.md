@@ -10,11 +10,11 @@ gallery:
   - url: /assets/images/RGL_homo.gif
     image_path: /assets/images/RGL_homo.gif
     alt: "placeholder image 1"
-    title: "Image 1 title caption"
+    title: "A monocentric DEM"
   - url: /assets/images/RGL_hetero.gif
     image_path: /assets/images/RGL_hetero.gif
     alt: "placeholder image 2"
-    title: "Image 2 title caption"
+    title: "A highly heterogeneous polycentric DEM"
 ---
 
 
