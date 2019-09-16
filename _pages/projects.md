@@ -3,7 +3,6 @@ layout: collection
 title: "Assorted collection of other projects"
 permalink: /projects/
 collection: portfolio
-classes: wide
 author_profile: true
 ---
 
