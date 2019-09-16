@@ -1,8 +1,8 @@
 ---
 layout: single
 sitemap: true
-title: "Item Anamika"
-excerpt: "Short description of portfolio item number 2 </br><img src='/assets/city-pics/City_NYC.jpg'>"
+title: "Item Anamika 3"
+excerpt: "<img src='/assets/city-pics/City_NYC.jpg'> Here's a description of this project"
 collection: portfolio
 author_profile: false
 ---
