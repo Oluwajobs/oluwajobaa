@@ -3,9 +3,8 @@ layout: collection
 title: "Assorted collection of other projects"
 permalink: /projects/
 collection: portfolio
-entries_layout: grid
+classes: wide
 author_profile: true
-toc: true
 ---
 
 Sample document listing for the collection `_portfolio`.
