@@ -67,11 +67,11 @@ author:
   bio    : "NASA Earth Science Fellow. PhD candidate at Purdue University."
   location: "Palo Alto, CA"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://Anamika255.github.io"
+  #  - label: "Website"
+  #    icon: "fas fa-fw fa-link"
+  #    url: "https://Anamika255.github.io"
 
-    - label: "ashreeva@purdue.edu"
+    - label: "Email"
       icon: "far fa-fw fa-paper-plane"
       url: "mailto:ashreeva@purdue.edu"
 
@@ -87,13 +87,13 @@ author:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/Anamika255"
 
-    - label: "CV"
-      icon: "far fa-fw fa-file-pdf"
-      url: "/assets/files/CV.pdf"
-
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google"
       url: "https://scholar.google.com/citations?user=lRnptscAAAAJ&hl=en"
+
+    - label: "CV"
+      icon: "far fa-fw fa-file-pdf"
+      url: "/assets/files/CV.pdf"
 
 
 footer:
