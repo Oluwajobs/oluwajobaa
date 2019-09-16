@@ -16,5 +16,5 @@ Please get in touch for more details about any of them.
 {% include base_path %}
 
 {% for post in site.portfolio %}
-  <!--{% include archive-single.html %}-->
+  {% include archive-single.html %}
 {% endfor %}
