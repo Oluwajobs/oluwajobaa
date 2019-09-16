@@ -105,7 +105,7 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
 
-# Collections
+# Collections --> This is very important for Projects page
 collections:
   projects:
     output: true
