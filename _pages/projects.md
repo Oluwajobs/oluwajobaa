@@ -25,8 +25,6 @@ Here's a collection of my projects. I will try to keep the codes available on Gi
 ### Other projects coming up soon.
 
 
-
-
 <!--
 {% include base_path %}
 
