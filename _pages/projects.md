@@ -3,7 +3,7 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
-gallery2:
+gallery:
   - url: /_portfolio/portfolio-1.md
     image_path: /assets/images/Networks.jpg
     alt: "Black and grays with a hint of green"
@@ -12,4 +12,5 @@ gallery2:
     alt: "Made for open text placement"
 ---
 Click on any project for more details
+
 {% include gallery %}
