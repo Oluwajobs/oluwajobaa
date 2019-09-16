@@ -16,8 +16,7 @@ Here's a collection of my projects. I will try to keep the codes available on Gi
 <!--{: .btn .btn--info .btn--large}-->
 
 100 climate proofing strategies were implemented by the global consortium of C40 cities. How did those strategies fare on a resilience landscape? [link](https://ams.confex.com/ams/97Annual/webprogram/Paper313617.html){: .btn .btn--inverse} [pdf](/assets/files/C40_report.pdf){: .btn .btn--inverse}
-
-<img src='/assets/images/C40-header.png'>
+<img src='/assets/images/C40-header.png'> |
 
 
 ### Other projects coming up soon.
