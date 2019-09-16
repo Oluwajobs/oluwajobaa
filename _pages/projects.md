@@ -3,10 +3,6 @@ layout: single
 title: "Assorted collection of other projects"
 permalink: /projects/
 author_profile: true
-toc: true
-toc_sticky: true
-toc_label: "Quick Links"
-toc_icon: "list-ul"
 ---
 
 
