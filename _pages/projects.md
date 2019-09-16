@@ -13,4 +13,4 @@ gallery:
 ---
 Click on any project for more details
 
-{% include gallery %}
+{% include gallery class="full" %}
