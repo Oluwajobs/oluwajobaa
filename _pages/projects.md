@@ -1,9 +1,13 @@
 ---
-layout: collection
+layout: single
 title: "Assorted collection of other projects"
 permalink: /projects/
 collection: portfolio
 author_profile: true
+toc: true
+toc_sticky: true
+toc_label: "Quick Links"
+toc_icon: "list-ul"
 ---
 
 Sample document listing for the collection `_portfolio`.
