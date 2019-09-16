@@ -2,7 +2,7 @@
 layout: single
 sitemap: true
 title: "Item Anamika 3"
-excerpt: "<img src='/assets/city-pics/City_NYC.jpg'> Here's a description of this project"
+excerpt: "<img src='/assets/city-pics/City_NYC.jpg' width="200" alt="Computer Hope"> Here's a description of this project"
 collection: portfolio
 author_profile: false
 ---
