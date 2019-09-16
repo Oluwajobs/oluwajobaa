@@ -106,13 +106,13 @@ footer:
       url: "https://github.com/"
 
 # Collections
-#collections:
-#  projects:
-#    output: true
-#    permalink: /:collection/:path/
-#  portfolio:
-#    output: true
-#    permalink: /:collection/:path/
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 
 defaults:
