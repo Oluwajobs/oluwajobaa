@@ -1,0 +1,16 @@
+---
+layout: grid
+title: "Assorted collection of other projects"
+permalink: /projects/
+author_profile: true
+classes: wide
+---
+
+Here's a collection of my projects. Please get in touch for more details about any of them.
+
+{% include base_path %}
+
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}
