@@ -2,7 +2,9 @@
 layout: single
 sitemap: true
 title: "Item Anamika 2"
-excerpt: "Short description of portfolio item number 2 </br><img src='/assets/city-pics/City_NYC.jpg'>"
+header:
+  image: /assets/city-pics/City-andreas-brucker.jpg
+  teaser: /assets/city-pics/City-andreas-brucker.jpg
 collection: portfolio
 author_profile: false
 ---
