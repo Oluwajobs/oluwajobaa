@@ -10,7 +10,7 @@ author_profile: true
 
 
 <figure style="width: 500px" class="align-right">
-  <img src="/assets/images/London_me.jpg" alt="">
+  <img src="/assets/images/laptop.jpg" alt="">
 </figure>
 
 Hello!! I am Anamika. I am currently a doctoral student at [Purdue University](https://www.purdue.edu) pursuing an interdisciplinary Ph.D. I have a [background](/assets/files/CV.pdf) in Civil and Architectural Engineering, and I am now studying Statistical Physics, Complex Networks, Urban Meteorology, and Remote Sensing for understanding the [intra-urban complexity of the Urban Heat Island](/research/).
