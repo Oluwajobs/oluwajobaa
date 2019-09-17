@@ -19,7 +19,7 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 <figure>
   <img src="/assets/images/Wrf-workflow.png" alt="WRF Workflow">
   <figcaption>Workflow of WRF for a typical run. Source: <a href="http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/index.php">WRF Online Tutorial</a></figcaption>
-</figure>
+</figure><br>
 
 
 ### Step 1: Get Meteorological Reanalysis Data to guide the simulation.
