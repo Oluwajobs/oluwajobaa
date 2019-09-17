@@ -12,7 +12,7 @@ classes: wide
 
 ## Downloading and setting up WRF environment.
 
-I have already done this part (hopefully correctly), so I'll write a page on this some other day if I need to reinstall it. Meanwhile, here's a [How to compile WRF link](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Compile/index.php) from UCAR's website.
+I have already done this part (hopefully correctly), so I'll write a page on this some other day if I need to reinstall it. Meanwhile, here's a much more sophisticated link for [How to compile WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Compile/index.php) from UCAR's experts.
 
 ## Running a simulation in WRF.
 
@@ -50,4 +50,4 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 * Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
 
-* Unlike meteorological data, there is no need to download Geographic data everytime because this is just static. 
+* Unlike meteorological data, there is no need to download Geographic data everytime because this is just static.
