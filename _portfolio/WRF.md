@@ -33,7 +33,7 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
   * In Google Earth Engine, I usually use the [NCEP/NCAR Reanalysis dataset](https://rda.ucar.edu/datasets/ds090.0/) to visualize air temperatures. But its resolution is 209 km, not the best for intra-urban applications.
   * Mostly they use [NCEP FNL (Final)](https://rda.ucar.edu/datasets/ds083.2/). Resolution 1 degree.
 
-* [Finding the right ERA-interim Reanalysis files](https://rda.ucar.edu/datasets/ds627.0/#!access) (Sign in required): Courtesy [Dave Stepniak], UCAR
+* [Finding the right ERA-interim Reanalysis files](https://rda.ucar.edu/datasets/ds627.0/#!access) (Sign in required):
   * Last time, I made the mistake of downloading NetCDF formats of ERA5 and ran into an error where it showed 0 available levels of soil depth. However, WRF/ungrib is not yet adapted to handle netCDF files. Be sure to download GRIB files.
   * Use the "Web Server Holding" column to access the whole files, not the "Data Format Conversion" column.
   * **For atmospheric variables:** Use the "[ERA Interim atmospheric model analysis interpolated to pressure levels](https://rda.ucar.edu/datasets/ds627.0/index.html#!cgi-bin/datasets/getWebList?dsnum=627.0&gindex=6)" group for WRF, not the "ERA Interim atmospheric model analysis on model levels" group.
