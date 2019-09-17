@@ -41,11 +41,13 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 * Downloading the files.
   * Pick "[Faceted Browse](https://rda.ucar.edu/datasets/ds627.0/index.html#cgi-bin/datasets/getWebList?dsnum=627.0&action=customize&disp=&gindex=6)" and enter the time period of interest. The files are huge (over 100 MB each) so only download the time period needed. Case of Paris: Time period - July 19th to August 10th, 2018.
-  * Select none of the variables (which basically means select all) and all the files identified within the time period.
-  * Use download option 2 that generates a Unix script to read them all using wget.
-  * Copy the contents and paste them in a new file created in RCAC_SCRATCH using `vi <name_of_script>` where `<name_of_script> : Wget-City-sfc.sh or Wget-City-sfc.sh` (personal convention). Within the file, update the NCAR password.
+  * Select none of the variables (which basically means select all) and all the files identified within the time period. Use download option 2 that generates a Unix script to read them all using wget.
+  * Copy the contents and paste them in a new file created in `$RCAC_SCRATCH` using `vi <name_of_script>` where `<name_of_script> : Wget-City-sfc.sh or Wget-City-sfc.sh` (personal convention). Within the file, update the NCAR password.
   * Make the file executable using `chmod 755 <name_of_script>`. Although mine worked regardless.
-  * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. If I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line.
-  * Then move the downloaded files to a separate folder.
+  * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. If I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line. Then move the downloaded files to a separate folder.
 
-### Step 2: Get Geographical inputs. Domain set up.
+### Step 2: Get Static Geographical Data and Domain set up.
+
+* Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
+
+* Unlike meteorological data, there is no need to download Geographic data everytime because this is just static. 
