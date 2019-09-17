@@ -13,7 +13,6 @@ toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
 Some useful tools I have built for my research. Any suggestions for improvement will be highly appreciated.
 * [WRF domain visualizer in Google Earth Engine](https://code.earthengine.google.com/b49019fd1f97e7313b143992a717726c)
 * [Land Surface Temperature from Landsat images](https://code.earthengine.google.com/36460b55b5c8688d50e27cbb073a0ef9)
-* [WRF Diaries](https://anamika255.github.io/portfolio/WRF/): Live document. 
 
 ## Research groups
 
@@ -53,7 +52,7 @@ I am extremely passionate about data visualization and visual story-telling. Her
 
 ## Remote Sensing and Geospatial Analysis
 
-[**Google Earth Engine**](https://earthengine.google.com/): If you deal with satellite data and geospatial analysis, give this a test drive |
+[**Google Earth Engine**](https://earthengine.google.com/): If you deal with satellite data and geospatial analysis, give this a test drive. |
 
 <!--
 ## Computational resources
@@ -63,9 +62,13 @@ I am extremely passionate about data visualization and visual story-telling. Her
 [**Loopy**](https://ncase.me/loopy/): A tool for thinking in systems |
 -->
 
+## Weather Research Forecasting (WRF)
+
+[**WRF Diaries**](https://anamika255.github.io/portfolio/WRF/): Here I take notes on running WRF. In the hope that the hurdles I have battled once do not slow me down again. |
+
 ## Managing Grad-Life
 
-[**The art of spaced repetition**](https://ncase.me/remember/)  |
+[**The art of spaced repetition**](https://ncase.me/remember/): To accept that the expertise you once had will fade with time. All we can do is find time to relearn old tricks as we learn new ones. |
 
 [**Calendar. Not to-do lists.**](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post.|
 
