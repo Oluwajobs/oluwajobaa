@@ -34,6 +34,14 @@ I love to perform live music, and I am the guitarist and vocalist of an indo-wes
   <img src="/assets/music/Me-Prash.jpg" alt="">
 </figure>
 
+<figure style="width: 367px" class="align-left">
+  <img src="/assets/music/Swaranjali.png" alt="">
+</figure>
+
+<figure style="width: 516px" class="align-right">
+  <img src="/assets/music/global-fest.png" alt="">
+</figure>
+
 <figure class="align-center">
   <img src="/assets/music/Mosey.png" alt="">
 </figure>
