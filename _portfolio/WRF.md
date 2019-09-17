@@ -22,7 +22,7 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 </figure><br>
 
 
-### Step 1: Get Meteorological Reanalysis Data to guide the simulation.
+### Step 1: Get Gridded Meteorological Data to guide the simulation.
 
 * Choosing the Reanalysis dataset: [List of available GRIB datasets from NCAR](http://www2.mmm.ucar.edu/wrf/users/download/free_data.html).
   * For Paris, I used ERA by ECMWF.
