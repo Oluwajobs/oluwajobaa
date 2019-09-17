@@ -13,6 +13,7 @@ toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
 Some useful tools I have built for my research. Any suggestions for improvement will be highly appreciated.
 * [WRF domain visualizer in Google Earth Engine](https://code.earthengine.google.com/b49019fd1f97e7313b143992a717726c)
 * [Land Surface Temperature from Landsat images](https://code.earthengine.google.com/36460b55b5c8688d50e27cbb073a0ef9)
+* [WRF Diaries](https://anamika255.github.io/portfolio/WRF/): Live document. 
 
 ## Research groups
 
@@ -69,10 +70,6 @@ I am extremely passionate about data visualization and visual story-telling. Her
 [**Calendar. Not to-do lists.**](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post.|
 
 [**WorkFlowy**](https://workflowy.com/): Instead, I like to make lists! |
-
-## For me
-
-[WRF diaries](https://anamika255.github.io/portfolio/WRF/) |
 
 
 ![](/assets/images/Stat_Wars.png)
