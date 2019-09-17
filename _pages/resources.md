@@ -33,6 +33,16 @@ The WUDAPT project is a community-based project to gather a census of consistent
 
 <!-- Extre link: [Complex Networks Synthesis Workshops](https://www.ufz.de/cawr/index.php?en=42471) -->
 
+
+## Weather Research Forecasting (WRF)
+
+[**WRF Diaries**](https://anamika255.github.io/portfolio/WRF/): Here I take notes on running WRF. In the hope that the hurdles I have battled once do not slow me down again. |
+
+## Remote Sensing and Geospatial Analysis
+
+[**Google Earth Engine**](https://earthengine.google.com/): If you deal with satellite data and geospatial analysis, give this a test drive. |
+
+
 ## Interactive Science Communication
 
 I am extremely passionate about data visualization and visual story-telling. Here are some compelling narratives that inspire me.
@@ -48,23 +58,6 @@ I am extremely passionate about data visualization and visual story-telling. Her
 [**How much hotter is your hometown?**](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html): On climate change communication. |
 
 <!-- [Hottest year on record](https://www.bloomberg.com/graphics/hottest-year-on-record/) -->
-
-
-## Remote Sensing and Geospatial Analysis
-
-[**Google Earth Engine**](https://earthengine.google.com/): If you deal with satellite data and geospatial analysis, give this a test drive. |
-
-<!--
-## Computational resources
-## WRF
-## Landsat etc
-## Random cool links
-[**Loopy**](https://ncase.me/loopy/): A tool for thinking in systems |
--->
-
-## Weather Research Forecasting (WRF)
-
-[**WRF Diaries**](https://anamika255.github.io/portfolio/WRF/): Here I take notes on running WRF. In the hope that the hurdles I have battled once do not slow me down again. |
 
 ## Managing Grad-Life
 
