@@ -21,7 +21,7 @@ I come from India, where I have mostly lived in Ranchi - my hometown (now known 
 
 Apart from science, I am into [music](/music/). I am a singer/guitarist with a band of fellow Ph.D. students at Purdue. I do mostly covers, and have only ever written one original song, that was for my best friend, bandmate, fellow scientist, and now husband - [Sai Prasanth](https://sites.google.com/view/saiprasanth).
 
-I discovered through my day-to-day Ph.D. work that I love to look at the Earth using satellite imagery. I have spent countless hours on Google Earth and in flights admiring the natural and the engineered beauty (cities) of our planet. To the point where the Neural Networks in my brain now recognize most cities by a fragment of its road network, coastline, bend of its river, night light image, or maybe just a raw Landsat photo. Maps make my day. These days, I can be found staring at the [Live Aerial screen savers](https://support.apple.com/en-us/HT208992) hosted by Apple TV.
+I discovered through my day-to-day Ph.D. work that I love to look at the Earth using satellite imagery. I have spent countless hours on Google Earth and in flights admiring the natural and the engineered beauty (cities) of our planet. To the point where the Neural Networks in my brain now recognize most cities by a fragment of its road network, coastline, bend of its river, night lights distribution, or maybe just a raw Landsat image. Maps make my day. These days, I can be found staring at the [Live Aerial screen savers](https://support.apple.com/en-us/HT208992) hosted by Apple TV.
 
 
 <figure class="align-center">
