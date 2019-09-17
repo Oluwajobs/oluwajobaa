@@ -15,7 +15,7 @@ author_profile: true
 [Light Outline Button](#link){: .btn .btn--inverse}
 -->
 
-## Journal publications
+# Journal publications
 
 2019 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2019). Emergent self-similarity and scaling properties of fractal intra-urban heat islets for diverse global cities. *Physical Reviews E* (in press). [preprint](https://eartharxiv.org/t9s3g){: .btn .btn--inverse} [pdf](/assets/files/PRE_EarthArXiv.pdf){: .btn .btn--inverse} [dataset](https://osf.io/53t2g/){: .btn .btn--inverse} |
 
@@ -29,7 +29,7 @@ author_profile: true
 2018 | Ching, J., et al, including **Shreevastava, A.** (2018). WUDAPT: An urban weather, climate, and environmental modeling infrastructure for the Anthropocene. *Bulletin of the American Meteorological Society*, 99(9), 1907-1924. [doi](https://doi.org/10.1175/BAMS-D-16-0236.1){: .btn .btn--inverse} [pdf](/assets/files/WUDAPT_BAMS_2018.pdf){: .btn .btn--inverse} |
 
 
-## Conference presentations
+# Conference presentations
 
 2019/12 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2018, December). Fractal topography of the intra-urban thermal landscape. *Nonlinear Geophysics. AGU Fall Meetings, Washington, DC.* (Oral) [link](http://adsabs.harvard.edu/abs/2018AGUFMNG41A..04S){: .btn .btn--inverse} |
 
@@ -43,7 +43,7 @@ author_profile: true
 
 2017/01 | Niyogi, D., Bhalachandran, S., Brousse, O., Jain, M., **Shreevastava, A.**, Jain, A.P. (2017, January) Investigation of the Impact of Urbanization Under the 2015 Delhi Heat Wave Scenario *13th Symposium of the Urban Environment. 97th AMS Annual Meeting, Seattle, WA.*  [link](https://ams.confex.com/ams/97Annual/webprogram/Paper313616.html){: .btn .btn--inverse} |
 
-## Seminars and invited talks
+# Seminars and invited talks
 
 2019/04 | Characterizing the spatial complexity of the intra-urban heat islets. *NASA Land Cover Land Use Change (LCLUC) Science Team meeting, Rockville, MD.* [link](https://lcluc.umd.edu/meetings/2019-nasa-lcluc-spring-science-team-meeting){: .btn .btn--inverse}. |
 
