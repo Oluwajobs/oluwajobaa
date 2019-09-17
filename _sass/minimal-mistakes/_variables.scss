@@ -21,6 +21,7 @@ $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+$segoe: "Segoe UI", sans-serif !default;
 
 /* serif typefaces */
 $georgia: Georgia, serif !default;
@@ -30,7 +31,7 @@ $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
 $global-font-family: $helvetica !default;
-$header-font-family: $garamond !default;
+$header-font-family: $bodoni !default;
 $caption-font-family: $serif !default;
 
 /* type scale */
@@ -39,9 +40,13 @@ $type-size-2: 1.953em !default; // ~31.248px
 $type-size-3: 1.563em !default; // ~25.008px
 $type-size-4: 1.25em !default; // ~20px
 $type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
-$type-size-7: 0.6875em !default; // ~11px
-$type-size-8: 0.625em !default; // ~10px
+$type-size-6: 0.85em !default; //
+$type-size-7: 0.80em !default; //
+$type-size-8: 0.75em !default; // 
+
+//$type-size-6: 0.75em !default; // ~12px
+//$type-size-7: 0.6875em !default; // ~11px
+//$type-size-8: 0.625em !default; // ~10px
 
 /*
    Colors
