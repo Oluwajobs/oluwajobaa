@@ -65,8 +65,8 @@
     width: 100%;
 
     &.emoji {
-      width: 35px;
-      height: 35px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -117,8 +117,8 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
 
   @include breakpoint($large) {
     display: block;
