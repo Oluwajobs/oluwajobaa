@@ -42,7 +42,7 @@ I love to perform live music, and I am the guitarist and vocalist of an indo-wes
   <img src="/assets/music/Swaranjali.png" alt="">
 </figure>
 
-<figure style="width: 516px" class="align-right">
+<figure style="width: 514px" class="align-right">
   <img src="/assets/music/global-fest.png" alt="">
 </figure>
 
