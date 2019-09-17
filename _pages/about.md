@@ -9,7 +9,7 @@ author_profile: true
 ---
 
 
-<figure style="width: 500px" class="align-right">
+<figure style="width: 400px" class="align-right">
   <img src="/assets/images/laptop.jpg" alt="">
 </figure>
 
