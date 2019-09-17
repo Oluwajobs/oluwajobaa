@@ -10,11 +10,11 @@ classes: wide
 
 `This is my personal notebook to help me run WRF`
 
-## Downloading and setting up WRF environment.
+# Downloading and setting up WRF environment.
 
 I have already done this part (hopefully correctly), so I'll write a page on this some other day if I need to reinstall it. Meanwhile, here's a much more sophisticated link for [How to compile WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Compile/index.php) from UCAR's experts.
 
-## Running a simulation in WRF.
+# Running a simulation in WRF.
 
 <figure style="width: 600px">
   <img src="/assets/images/Wrf-workflow.png" alt="WRF Workflow">
@@ -22,7 +22,7 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 </figure><br>
 
 
-### Step 1: Get Gridded Meteorological Data to guide the simulation.
+## Step 1: Get Gridded Meteorological Data to guide the simulation.
 
 * Choosing the Reanalysis dataset: [List of available GRIB datasets from NCAR](http://www2.mmm.ucar.edu/wrf/users/download/free_data.html).
   * For Paris, I used ERA by ECMWF.
@@ -46,11 +46,11 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
   * Make the file executable using `chmod 755 <name_of_script>`. Although mine worked regardless.
   * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. When I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line. Then move the downloaded files to a separate folder.
 
-### Step 2: Get Static Geographical Data and Domain set up.
+## Step 2: Get Static Geographical Data and Domain set up.
 
 * Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
 
 * Unlike meteorological data, there is no need to download Geographic data every time because this is just static.
 
-* Now we set up domain: 
+* Now we set up domain:
   * Use [this code](https://code.earthengine.google.com/b49019fd1f97e7313b143992a717726c) in Google Earth Engine to visualize and configure domains.
