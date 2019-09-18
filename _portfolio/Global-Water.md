@@ -1,11 +1,12 @@
 ---
 layout: single
 sitemap: true
-title: "Item Anamika 2"
-excerpt: Text only
+title: "Global Water Poverty"
+excerpt: What are some of the patterns of water resource availability and poverty in the world? A clustering analysis comprising of all countries.
 collection: portfolio
 author_profile: false
 ---
 
+A brief summary coming up soon.
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML.
+Click [here](assets/files/Water-Poverty.pdf) for the poster.

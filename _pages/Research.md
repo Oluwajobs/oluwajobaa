@@ -27,6 +27,7 @@ I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue U
 
 {% include gallery %}
 
+
 <!--
 This page is under construction
 ## Intra-urban heat islets

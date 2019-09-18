@@ -2,7 +2,7 @@
 layout: single
 sitemap: true
 title: "Running WRF"
-excerpt: "This is my personal notebook to help me run WRF"
+excerpt: "This is my personal notebook to help me run WRF <img src='/assets/images/Wrf-workflow.png'>"
 collection: portfolio
 author_profile: false
 classes: wide
