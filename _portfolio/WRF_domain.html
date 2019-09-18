@@ -208,27 +208,27 @@ bounding_box &lt;- function(lat, lon, dist, in.miles = FALSE) {
   rad2deg &lt;- function(x) x*(180/pi)
   lat_range &lt;- function(latr, r) rad2deg(latr %+/-% r)
   lon_range &lt;- function(lonr, dlon) rad2deg(lonr %+/-% dlon)
-
+  
   r &lt;- ang_rad(dist)
   latr &lt;- deg2rad(lat)
   lonr &lt;- deg2rad(lon)
   dlon &lt;- asin(sin(r)/cos(latr))
-
-  m &lt;- matrix(c(lon_range(lonr = lonr, dlon = dlon),
+  
+  m &lt;- matrix(c(lon_range(lonr = lonr, dlon = dlon), 
                 lat_range(latr=latr, r=r)), nrow=2, byrow = TRUE)
-
+  
   dimnames(m) &lt;- list(c(&quot;lng&quot;, &quot;lat&quot;), c(&quot;min&quot;, &quot;max&quot;))
   m
 }
 Plot_Domains &lt;- function(City, Dom1, Dom2, Dom3, zoom_level){
-
+  
   CityLon &lt;- geocode(City)[[1]]
   CityLat &lt;- geocode(City)[[2]]
-
+  
   bb1 &lt;- bounding_box(lon = CityLon, lat = CityLat, dist=Dom1/2, in.miles=F)
   bb2 &lt;- bounding_box(lon = CityLon, lat = CityLat, dist=Dom2/2, in.miles=F)
   bb3 &lt;- bounding_box(lon = CityLon, lat = CityLat, dist=Dom3/2, in.miles=F)
-
+  
   if (zoom_level==1) {
     box &lt;- as.vector(bb1)
     names(box) &lt;- c(&quot;left&quot;,&quot;bottom&quot;,&quot;right&quot;,&quot;top&quot;)
@@ -245,32 +245,32 @@ Plot_Domains &lt;- function(City, Dom1, Dom2, Dom3, zoom_level){
     zoom &lt;- zoom_level
   }
   print(paste0(&quot;Zoom Level is &quot;,zoom))
-
+  
   mapImageData &lt;- get_map(location = c(lon = CityLon, lat = CityLat),
-                  color = &quot;color&quot;, source = &quot;google&quot;, maptype = &quot;roadmap&quot;,
+                  color = &quot;color&quot;, source = &quot;google&quot;, maptype = &quot;roadmap&quot;, 
                   zoom = zoom)
   ## zoom is an integer value from 3 (continent) to 21 (building)
-
-  ggmap(mapImageData, extent= &quot;panel&quot;, ylab = &quot;Latitude&quot;, xlab = &quot;Longitude&quot;) +
-    geom_rect(aes(xmin = bb1[1, 1], xmax = bb1[1, 2], ymin = bb1[2, 1],
+  
+  ggmap(mapImageData, extent= &quot;panel&quot;, ylab = &quot;Latitude&quot;, xlab = &quot;Longitude&quot;) + 
+    geom_rect(aes(xmin = bb1[1, 1], xmax = bb1[1, 2], ymin = bb1[2, 1], 
                   ymax = bb1[2, 2]), color=&quot;red&quot;, fill=NA, size=1) +
-    geom_rect(aes(xmin = bb2[1, 1], xmax = bb2[1, 2], ymin = bb2[2, 1],
+    geom_rect(aes(xmin = bb2[1, 1], xmax = bb2[1, 2], ymin = bb2[2, 1], 
                   ymax = bb2[2, 2]), color=&quot;blue&quot;, fill=NA, size=1) +
-    geom_rect(aes(xmin = bb3[1, 1], xmax = bb3[1, 2], ymin = bb3[2, 1],
+    geom_rect(aes(xmin = bb3[1, 1], xmax = bb3[1, 2], ymin = bb3[2, 1], 
                   ymax = bb3[2, 2]), color=&quot;green&quot;, fill=NA, size=1) +
-    geom_point(data=data.frame(lon = CityLon, lat = CityLat), size=5,
+    geom_point(data=data.frame(lon = CityLon, lat = CityLat), size=5, 
                color=&quot;yellow&quot;)
-
+  
 }
 WRF_domain &lt;- function(City, Dom1, Dom2, Dom3){
-
+  
   GridCells1 &lt;- Dom1/9     ## GridCells in Domain 1 of size 9 km each
   GridCells1 &lt;- 9*ceiling(GridCells1/9)   ## Rounding off to evenly fit
-
+  
   GridCells2 &lt;- Dom2/3     ## GridCells in Domain 2 of size 3 km each
   GridCells2&lt;- 18*ceiling(GridCells2/18) ## Rounding off to evenly fit
   GridCells2_1 &lt;- GridCells2/3   ## GridCells in Domain 2 of size 9 km each
-
+  
   GridCells3 &lt;- Dom3/1     ## GridCells in Domain 3 of size 1 km each
   GridCells3&lt;- 18*ceiling(GridCells3/18) ## Rounding off to evenly fit
   GridCells3_1 &lt;- GridCells3/9   ## GridCells in Domain 3 of size 9 km each
@@ -282,33 +282,33 @@ WRF_domain &lt;- function(City, Dom1, Dom2, Dom3){
   if(GridCells1 &lt; 100) warning(&quot;The number of gridcells in Domain 1 should not be less than 100&quot;)
   if(GridCells2 &lt; 100) warning(&quot;The number of gridcells in Domain 2 should not be less than 100&quot;)
   if(GridCells3 &lt; 100) warning(&quot;The number of gridcells in Domain 3 should not be less than 100&quot;)
-
+  
   if((GridCells1 - GridCells2_1)/2 &lt; 10) warning(&quot;There should be at least 10 large gridcells in the boundary between Domain 1 and Domain 2&quot;)
   if((GridCells2_1 - GridCells3_1)*3/2 &lt; 10) warning(&quot;There should be at least 10 medium gridcells in the boundary between Domain 2 and Domain 3&quot;)
-
+  
   Start2 &lt;- (GridCells1 - GridCells2_1)/2
   Start3 &lt;- (GridCells1 - GridCells3_1)/2
 #  e_we &lt;- data.table(GridCells1, GridCells2+1,GridCells3+1)%&gt;%as.data.frame()
 #  i_parent_start &lt;- data.table(1, Start2, Start3)%&gt;%as.data.frame()
   e_we &lt;- c(GridCells1, GridCells2+1,GridCells3+1)
   i_parent_start &lt;- c(1, Start2, Start3)
-
+  
   WRF_out &lt;- data.table(rbind(c(&quot;parent_id&quot;,1,1,1),
                         c(&quot;parent_grid_ratio&quot;,1,3,9),
                         c(&quot;i_parent_start&quot;,i_parent_start),
                         c(&quot;j_parent_start&quot;,i_parent_start),
                         c(&quot;e_we&quot;,e_we),
                         c(&quot;e_sn&quot;,e_we)))
-
+    
   colnames(WRF_out) &lt;-  c(&quot;Label&quot;, &quot;Domain 1&quot;, &quot;Domain 2&quot;, &quot;Domain 3&quot;)
-  print(WRF_out)
+  print(WRF_out)  
   return(WRF_out)
 }</code></pre>
 </div>
 </div>
 <div id="input-citys-name-here-and-get-latitude-longitude-of-center-of-domains" class="section level2">
 <h2>Input City’s name here and get Latitude Longitude of center of domains</h2>
-<pre class="r"><code>City &lt;- &quot;Paris&quot;
+<pre class="r"><code>City &lt;- &quot;Paris&quot; 
 
 Ref_Lon &lt;- geocode(City)[[1]]</code></pre>
 <pre><code>## Source : https://maps.googleapis.com/maps/api/geocode/json?address=Paris&amp;key=AIzaSyBGc7jBM4D1uZigyrO1XVHWXhyrytdUG5E</code></pre>
@@ -319,7 +319,7 @@ Ref_Lon &lt;- geocode(City)[[1]]</code></pre>
 <h2>Get GeoGrid details</h2>
 <div id="enter-the-size-of-square-domains-you-need-edge-length-in-km" class="section level3">
 <h3>Enter the size of square domains you need (edge length in km)</h3>
-<pre class="r"><code>Dom1 &lt;- 929 # Size of domain 1
+<pre class="r"><code>Dom1 &lt;- 929 # Size of domain 1 
 Dom2 &lt;- 500 # Size of domain 2
 Dom3 &lt;- 200 # Size of domain 3
 
