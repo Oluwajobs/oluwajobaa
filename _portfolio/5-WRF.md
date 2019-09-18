@@ -63,12 +63,9 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 ## Step 3: Edit the namelist file.
 
 * `namelist.wps` best practices [link](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html).
-* Duplicate the `namelist.wps` file for a new run as `namelist.wps.City`.
+* The current run specifications should always be stored as `namelist.wps`. Therefore, backup the original and keep renaming the completed runs.
+
 * `&share`
-<!--
-  * `max_dom = 3` (number of domains)
-  * enter start and end time 3 times for 3 domains.
--->
   * `interval_seconds = 21600` (for 6 hourly ERA data).
   * leave `io_form_geogrid = 2` for NetCDF as ungrib will convert our reanalysis data to netcdf.
 
@@ -83,11 +80,8 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
     * TRUELAT2 - required for MAP_PROJ = 6 (defaults to 0 otherwise)
   * `stand_lon = ref_lon`: If this longitude is set to the same value as ref_lon, your largest domain will be centered.
   *  `geog_data_path`: Location of Geographical dataset `WPS_GEOG` in RCAC_SCRATCH.
+  * Load ncl -- `module load ncl`. Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
+  * Run `./geogrid.exe` to generate output in the format of `geo_em.dxx.nc` - one file for each domain.
 
 * `&ungrib`
   *
-
-
-
-
-  * Run `plotgrids.exe` to make sure geogrid is in order.
