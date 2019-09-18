@@ -39,6 +39,10 @@ The WUDAPT project is a community-based project to gather a census of consistent
 
 [**WRF Diaries**](https://anamika255.github.io/portfolio/5-WRF/): Here I take notes on running WRF. In the hope that the hurdles I have overcome once do not slow me down again. |
 
+<!--
+[**Post Processing using X-array](https://fabienmaussion.info/acinn_xarray_workshop/#/13): Courtesy of Fabien Maussion (University of Innsbruck).
+--> 
+
 ## Remote Sensing and Geospatial Analysis
 
 [**Google Earth Engine**](https://earthengine.google.com/): If you deal with satellite data and geospatial analysis, give this a test drive. |

@@ -48,7 +48,7 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 
 <figure style="width: 400px" class="align-right">
-  <img src="/assets/images/WRF-domain.png" alt="">
+  <img src="/assets/images/WRF-domain.png" alt="WRF">
 </figure>
 
 
@@ -62,13 +62,32 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 ## Step 3: The `namelist.wps` file.
 
-* `namelist.wps` [best practices](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html).
+* `namelist.wps` best practices [link](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html).
 * Duplicate the `namelist.wps` file for a new run as `namelist.wps.City`.
 * `&share`
-  * `max_dom` = 3 (number of domains)
+<!--
+  * `max_dom = 3` (number of domains)
   * enter start and end time 3 times for 3 domains.
-  * `interval_seconds` = 21600 (for 6 hourly ERA data).
+-->
+  * `interval_seconds = 21600` (for 6 hourly ERA data).
   * leave `io_form_geogrid = 2` for NetCDF as ungrib will convert our reanalysis data to netcdf.
 
 * `&geogrid`
-  *
+  * Input from R domain designer.
+  * `geog_data_res = 'default','default','default',`
+  * `dx and dy = 9000`. Resolution of largest domain (in meters for Lambert and Mercator projection. Degrees in Lat-Lon projection).
+  *  `map_proj = 'Lambert'` for mid-latitude European countries. Mercator will probably be better for India. [1=Lambert, 2=polar stereographic, 3=mercator, 6=lat-lon]
+  * `ref_lat` and `ref_lon` are the center of largest domain. Use `geocode(City)` in R.
+  * `truelat1 = ref_lat` for Lambert.
+    * TRUELAT1 - required for MAP_PROJ = 1, 2, 3 (defaults to 0 otherwise)
+    * TRUELAT2 - required for MAP_PROJ = 6 (defaults to 0 otherwise)
+  * `stand_lon = ref_lon`: If this longitude is set to the same value as ref_lon, your largest domain will be centered.
+  *  `geog_data_path`: Location of Geographical dataset `WPS_GEOG` in RCAC_SCRATCH.
+
+* `&ungrib`
+  * 
+
+
+
+
+  * Run `plotgrids.exe` to make sure geogrid is in order.
