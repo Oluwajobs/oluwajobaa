@@ -9,4 +9,4 @@ author_profile: false
 
 A brief summary coming up soon.
 
-Click [here](assets/files/Water-Poverty.pdf) for the poster.
+Click [here](/assets/files/Water-Poverty.pdf) for the poster.
