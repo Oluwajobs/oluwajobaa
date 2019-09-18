@@ -79,9 +79,13 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
     * TRUELAT1 - required for MAP_PROJ = 1, 2, 3 (defaults to 0 otherwise)
     * TRUELAT2 - required for MAP_PROJ = 6 (defaults to 0 otherwise)
   * `stand_lon = ref_lon`: If this longitude is set to the same value as ref_lon, your largest domain will be centered.
-  *  `geog_data_path`: Location of Geographical dataset `WPS_GEOG` in RCAC_SCRATCH.
-  * Load ncl -- `module load ncl`. Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
-  * Run `./geogrid.exe` to generate output in the format of `geo_em.dxx.nc` - one file for each domain.
+  * `geog_data_path`: Location of Geographical dataset `WPS_GEOG` in RCAC_SCRATCH.
+* Load ncl -- `module load ncl`. Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
+* Run `./geogrid.exe` to generate output in the format of `geo_em.dxx.nc` - one file for each domain.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!  Successful completion of geogrid.        !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 * `&ungrib`
   *
