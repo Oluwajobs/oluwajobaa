@@ -52,16 +52,18 @@ author_profile: true
 
 2019/04 | Characterizing the spatial complexity of the intra-urban heat islets. *NASA Land Cover Land Use Change (LCLUC) Science Team meeting, Rockville, MD, USA.* [link](https://lcluc.umd.edu/meetings/2019-nasa-lcluc-spring-science-team-meeting){: .btn .btn--inverse}. |
 
-2018/08 | Fractal topography of the intra-urban thermal landscape. *Colorado State University, Fort Collins, CO, USA.* |
+2018/08 | Fractal topography of the intra-urban thermal landscape (Invited). *Colorado State University, Fort Collins, CO, USA.* |
 
-2018/06 | Fractal topography of the intra-urban thermal landscape. *NASA Ames, Mountainview, CA, USA.* |
+2018/06 | Fractal topography of the intra-urban thermal landscape (Invited). *NASA Ames, Mountainview, CA, USA.* |
 
-2018/02 | Fractal topography of the intra-urban thermal landscape. *University of Florida, Gainesville, FL, USA.* |
+2018/02 | Fractal topography of the intra-urban thermal landscape (Invited). *University of Florida, Gainesville, FL, USA.* |
 
-2017/08 | Optimizing Thermal Comfort in Fractal Cities. *Technische Universitat (TU), Dresden, Germany.* [link](https://www.ufz.de/cawr/index.php?en=42471){: .btn .btn--inverse} |
+2017/08 | Optimizing Thermal Comfort in Fractal Cities (Invited). *Technische Universitat (TU), Dresden, Germany.* [link](https://www.ufz.de/cawr/index.php?en=42471){: .btn .btn--inverse} |
 
 2016/08 | A resilience analysis of 100 climate proofing strategies by 56 global cities. *Helmholtz Centre for Environmental Research (UFZ), Magdeburg, Germany.* [link](https://www.ufz.de/cawr/index.php?en=43129){: .btn .btn--inverse} |
 
 2016/06 | A resilience analysis of 100 climate proofing strategies by 56 global cities. *Environmental Management Centre (EMC), Mumbai, India* [link](https://www.emcentre.com/){: .btn .btn--inverse} |
 
+<!--
 2016/06 | Using SAGA GIS to classify urban land use and land cover into Local Climate Zone maps. *Indian Institute of Technology (IIT), Mumbai, India* |
+--> 
