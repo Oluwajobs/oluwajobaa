@@ -52,5 +52,10 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 * Unlike meteorological data, there is no need to download Geographic data every time because this is just static.
 
-* Now we set up domain:
+* Now we set up domain.
+
+  * Guidelines from UCAR on `&geogrid` [setup](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html).
+
   * Use [this code](https://code.earthengine.google.com/b49019fd1f97e7313b143992a717726c) in Google Earth Engine to visualize and configure domains.
+
+  * It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
