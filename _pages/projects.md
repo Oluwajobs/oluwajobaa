@@ -6,7 +6,7 @@ collection: portfolio
 author_profile: true
 ---
 
-Here's a collection of my projects. I will try to keep the codes available on Github. Please get in touch for more details about any of them.
+Here's a collection of my projects. I will try to keep this page as updated as possible. Please get in touch for more details about any of them.
 
 <!--
 ## [Climate Proofing Cities: A Resilience Analysis](https://anamika255.github.io/portfolio/C40-Cities/)
