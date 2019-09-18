@@ -46,6 +46,12 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
   * Make the file executable using `chmod 755 <name_of_script>`. Although mine worked regardless.
   * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. When I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line. Then move the downloaded files to a separate folder.
 
+
+<figure style="width: 400px" class="align-right">
+  <img src="/assets/images/WRF-domain.png" alt="">
+</figure>
+
+
 ## Step 2: Get Static Geographical Data and Domain set up.
 
 * Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
@@ -53,11 +59,6 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 * Unlike meteorological data, there is no need to download Geographic data every time because this is just static.
 
 * Use the [R script](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
-
-<figure style="width: 300px" class="align-left">
-  <img src="/assets/images/WRF-domain.png" alt="">
-</figure>
-
 
 ## Step 3: The `namelist.wps` file.
 
