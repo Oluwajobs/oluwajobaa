@@ -16,12 +16,12 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 # Running a simulation in WRF.
 
-<figure style="width: 600px">
+<figure style="width: 700px">
   <img src="/assets/images/Wrf-workflow.png" alt="WRF Workflow">
   <figcaption>Workflow of WRF for a typical run. Source: <a href="http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/index.php">WRF Online Tutorial</a></figcaption>
-</figure><br>
+</figure>
 
-Here, I list ungrib first, and then geogrid. However, these are parallel processes and the order doesn't matter.
+Here, I have discusssed Meteorological data first, and then Geographical. However, these are parallel processes and the order doesn't matter.
 
 ## Step 1a: Get Gridded Meteorological Data to guide the simulation.
 
@@ -77,9 +77,7 @@ Here, I list ungrib first, and then geogrid. However, these are parallel process
     * `dx and dy = 9000`. Resolution of largest domain (in meters for Lambert and Mercator projection. Degrees in Lat-Lon projection).
     *  `map_proj = 'Lambert'` for mid-latitude European countries. Mercator will probably be better for India. [1=Lambert, 2=polar stereographic, 3=mercator, 6=lat-lon]
     * `ref_lat` and `ref_lon` are the center of largest domain. Use `geocode(City)` in R.
-    * `truelat1 = ref_lat` for Lambert.
-      * TRUELAT1 - required for MAP_PROJ = 1, 2, 3 (defaults to 0 otherwise)
-      * TRUELAT2 - required for MAP_PROJ = 6 (defaults to 0 otherwise)
+    * `truelat1 = ref_lat` required for Lambert, map_proj = 1, 2, 3 (defaults to 0 otherwise). `truelat2` - required for MAP_PROJ = 6 (defaults to 0 otherwise).
     * `stand_lon = ref_lon`: If this longitude is set to the same value as ref_lon, your largest domain will be centered.
     * `geog_data_path`: Location of Geographical dataset `WPS_GEOG` in RCAC_SCRATCH.
 
