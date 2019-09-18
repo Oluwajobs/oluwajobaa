@@ -65,7 +65,7 @@ Here, I list ungrib first, and then geogrid. However, these are parallel process
 
 ## Step 2b: GEOGRID:
 
-* Edit the [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps`. Therefore, backup the original and keep renaming the completed runs.
+* Edit the [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
 
   * `&share`
     * `interval_seconds = 21600` (for 6 hourly ERA data).
@@ -85,11 +85,7 @@ Here, I list ungrib first, and then geogrid. However, these are parallel process
 
 * Load ncl -- `module load ncl`. Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
 
-* Run `./geogrid.exe` to generate output in the format of `geo_em.dxx.nc` - one file for each domain. You should get this.
-
-`!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! <br>
-!  Successful completion of geogrid.        ! <br>
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! <br>`
+* Run `./geogrid.exe` to generate output in the format of `geo_em.dxx.nc` - one file for each domain saved in the WPS folder.
 
 * `&ungrib`
   *
