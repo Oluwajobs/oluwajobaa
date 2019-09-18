@@ -37,7 +37,7 @@ The WUDAPT project is a community-based project to gather a census of consistent
 
 ## Weather Research Forecasting (WRF)
 
-[**WRF Diaries**](https://anamika255.github.io/portfolio/WRF/): Here I take notes on running WRF. In the hope that the hurdles I have overcome once do not slow me down again. |
+[**WRF Diaries**](https://anamika255.github.io/portfolio/5-WRF/): Here I take notes on running WRF. In the hope that the hurdles I have overcome once do not slow me down again. |
 
 ## Remote Sensing and Geospatial Analysis
 

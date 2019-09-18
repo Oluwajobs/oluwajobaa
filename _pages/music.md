@@ -16,12 +16,6 @@ gallery:
 classes: wide
 ---
 
-<!--
-<figure style="width: 400px" class="align-right">
-  <img src="/assets/music/Me-Prash.jpg" alt="">
-</figure>
--->
-
 I love to perform live music, and I am the guitarist and vocalist of an indo-western fusion band at Purdue called [Tatvam](https://www.facebook.com/TatvamPurdue/). We have performed at several live sets at Purdue, Lafayette, Urbana-Champaign, and Chicago.
 
 <!--{% include gallery class="full" caption="Bandmates and me" %}-->
