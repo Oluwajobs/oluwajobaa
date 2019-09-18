@@ -52,8 +52,10 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 * Unlike meteorological data, there is no need to download Geographic data every time because this is just static.
 
-* Now we set up domain.
+* Use the [R markdown file](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
 
-  * Guidelines from UCAR on `&geogrid` [setup](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html).
+## Step 3: Ungrib or Geogrid (order doesn't matter)
 
-  * Use the [R markdown file](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
+* [GeoGrid](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/GEOGRID/index.php): Edit the `&share` and `&geogrid` sections of the `namelist.wps` file for your particular domain set-up.
+
+* `namelist.wps` [best practices](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html).
