@@ -83,9 +83,9 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 * Load ncl -- `module load ncl`. Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
 * Run `./geogrid.exe` to generate output in the format of `geo_em.dxx.nc` - one file for each domain.
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!  Successful completion of geogrid.        !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+`!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! <br>
+!  Successful completion of geogrid.        ! <br>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! <br>`
 
 * `&ungrib`
   *
