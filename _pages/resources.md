@@ -12,6 +12,7 @@ toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
 
 Some useful tools I have built for my research. Any suggestions for improvement will be highly appreciated.
 * [WRF domain designer and visualizer in R markdown](/assets/files/WRF_domain.pdf)
+* [WRF domains and time series from MODIS and NCAR Reanalysis data in Google Earth Engine](https://code.earthengine.google.com/e58342abd5ea1fff8ef4b3ab70497a73)
 * [Land Surface Temperature from Landsat images](https://code.earthengine.google.com/36460b55b5c8688d50e27cbb073a0ef9)
 
 ## Research groups
