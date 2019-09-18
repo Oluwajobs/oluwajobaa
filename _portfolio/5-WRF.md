@@ -21,8 +21,9 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
   <figcaption>Workflow of WRF for a typical run. Source: <a href="http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/index.php">WRF Online Tutorial</a></figcaption>
 </figure><br>
 
+Here, I list ungrib first, and then geogrid. However, these are parallel processes and the order doesn't matter.
 
-## Step 1: Get Gridded Meteorological Data to guide the simulation.
+## Step 1a: Get Gridded Meteorological Data to guide the simulation.
 
 * Choosing the Reanalysis dataset: [List of available GRIB datasets from NCAR](http://www2.mmm.ucar.edu/wrf/users/download/free_data.html).
   * For Paris, I used ERA by ECMWF.
@@ -46,13 +47,15 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
   * Make the file executable using `chmod 755 <name_of_script>`. Although mine worked regardless.
   * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. When I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line. Then move the downloaded files to a separate folder.
 
+## Step 1b: UNGRIB.
+
 
 <figure style="width: 400px" class="align-right">
   <img src="/assets/images/WRF-domain.png" alt="WRF">
 </figure>
 
 
-## Step 2: Get Static Geographical Data and Domain set up.
+## Step 2a: Get Static Geographical Data
 
 * Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
 
@@ -60,28 +63,29 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 * Use the [R script](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
 
-## Step 3: Edit the namelist file.
+## Step 2b: GEOGRID:
 
-* `namelist.wps` best practices [link](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html).
-* The current run specifications should always be stored as `namelist.wps`. Therefore, backup the original and keep renaming the completed runs.
+* Edit the [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps`. Therefore, backup the original and keep renaming the completed runs.
 
-* `&share`
-  * `interval_seconds = 21600` (for 6 hourly ERA data).
-  * leave `io_form_geogrid = 2` for NetCDF as ungrib will convert our reanalysis data to netcdf.
+  * `&share`
+    * `interval_seconds = 21600` (for 6 hourly ERA data).
+    * leave `io_form_geogrid = 2` for NetCDF as ungrib will convert our reanalysis data to netcdf.
 
-* `&geogrid`
-  * Input from R domain designer.
-  * `geog_data_res = 'default','default','default',`
-  * `dx and dy = 9000`. Resolution of largest domain (in meters for Lambert and Mercator projection. Degrees in Lat-Lon projection).
-  *  `map_proj = 'Lambert'` for mid-latitude European countries. Mercator will probably be better for India. [1=Lambert, 2=polar stereographic, 3=mercator, 6=lat-lon]
-  * `ref_lat` and `ref_lon` are the center of largest domain. Use `geocode(City)` in R.
-  * `truelat1 = ref_lat` for Lambert.
-    * TRUELAT1 - required for MAP_PROJ = 1, 2, 3 (defaults to 0 otherwise)
-    * TRUELAT2 - required for MAP_PROJ = 6 (defaults to 0 otherwise)
-  * `stand_lon = ref_lon`: If this longitude is set to the same value as ref_lon, your largest domain will be centered.
-  * `geog_data_path`: Location of Geographical dataset `WPS_GEOG` in RCAC_SCRATCH.
+  * `&geogrid`
+    * Input from R domain designer.
+    * `geog_data_res = 'default','default','default',`
+    * `dx and dy = 9000`. Resolution of largest domain (in meters for Lambert and Mercator projection. Degrees in Lat-Lon projection).
+    *  `map_proj = 'Lambert'` for mid-latitude European countries. Mercator will probably be better for India. [1=Lambert, 2=polar stereographic, 3=mercator, 6=lat-lon]
+    * `ref_lat` and `ref_lon` are the center of largest domain. Use `geocode(City)` in R.
+    * `truelat1 = ref_lat` for Lambert.
+      * TRUELAT1 - required for MAP_PROJ = 1, 2, 3 (defaults to 0 otherwise)
+      * TRUELAT2 - required for MAP_PROJ = 6 (defaults to 0 otherwise)
+    * `stand_lon = ref_lon`: If this longitude is set to the same value as ref_lon, your largest domain will be centered.
+    * `geog_data_path`: Location of Geographical dataset `WPS_GEOG` in RCAC_SCRATCH.
+
 * Load ncl -- `module load ncl`. Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
-* Run `./geogrid.exe` to generate output in the format of `geo_em.dxx.nc` - one file for each domain.
+
+* Run `./geogrid.exe` to generate output in the format of `geo_em.dxx.nc` - one file for each domain. You should get this.
 
 `!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! <br>
 !  Successful completion of geogrid.        ! <br>
