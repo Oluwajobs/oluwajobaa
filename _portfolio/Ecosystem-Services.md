@@ -9,6 +9,6 @@ author_profile: false
 
 Check out the video here:
 
-{% include video id="OSuo7QT4bJc" provider="youtube" %}
+{% include video id="" provider="youtube" %}
 
 <img src='/assets/images/UES.png'>
