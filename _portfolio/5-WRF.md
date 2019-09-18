@@ -60,7 +60,7 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 * Use the [R script](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
 
-## Step 3: The `namelist.wps` file.
+## Step 3: Edit the namelist file.
 
 * `namelist.wps` best practices [link](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html).
 * Duplicate the `namelist.wps` file for a new run as `namelist.wps.City`.
@@ -85,7 +85,7 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
   *  `geog_data_path`: Location of Geographical dataset `WPS_GEOG` in RCAC_SCRATCH.
 
 * `&ungrib`
-  * 
+  *
 
 
 
