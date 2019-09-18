@@ -52,10 +52,22 @@ I have already done this part (hopefully correctly), so I'll write a page on thi
 
 * Unlike meteorological data, there is no need to download Geographic data every time because this is just static.
 
-* Use the [R markdown file](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
+* Use the [R script](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
 
-## Step 3: Ungrib or Geogrid (order doesn't matter)
+<figure style="width: 300px" class="align-left">
+  <img src="/assets/images/WRF-domain.png" alt="">
+</figure>
 
-* [GeoGrid](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/GEOGRID/index.php): Edit the `&share` and `&geogrid` sections of the `namelist.wps` file for your particular domain set-up.
+
+## Step 3: The `namelist.wps` file.
 
 * `namelist.wps` [best practices](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html).
+* Duplicate the `namelist.wps` file for a new run as `namelist.wps.City`.
+* `&share`
+  * `max_dom` = 3 (number of domains)
+  * enter start and end time 3 times for 3 domains.
+  * `interval_seconds` = 21600 (for 6 hourly ERA data).
+  * leave `io_form_geogrid = 2` for NetCDF as ungrib will convert our reanalysis data to netcdf.
+
+* `&geogrid`
+  *
