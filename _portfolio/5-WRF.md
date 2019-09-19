@@ -29,7 +29,7 @@ There are essentially three main steps to running the WRF Preprocessing System:
   2. Extract meteorological fields from GRIB data sets for the simulation period with `ungrib.exe`.
   3. Horizontally interpolate meteorological fields to the model domains with `metgrid.exe`.
 
-Here, I have discussed Meteorological data first, and then Geographical. However, these are parallel processes and the order doesn't matter.
+Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These are parallel processes and the order doesn't matter.
 
 ## Step 1a: Gridded Meteorological Data
 
@@ -108,7 +108,7 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 * No change to `namelist.wps` required. Just run `./metgrid.exe`.
 * (Optional) Make sure `METGRID.TBL` is linked correctly to `METGRID.TBL.ARW` using `ls metgrid/METGRID.TBL`. This is also true for the other three programs.
 * This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
-  * This step is failing. While the output printed "Success", several files were empty. Stuck Here. 
+  * This step is failing. While the output printed "Success", several files were empty. Stuck Here.
 
 
 # Part 2: [WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/index.php).
