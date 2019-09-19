@@ -57,13 +57,12 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 * Edit the `&share` part of [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
 
   * `&share`
-    * `start_date` and `end_date`: three times for each domain.
+    * `start_date` and `end_date`: three times for each domain. Avoid [this error](http://forum.wrfforum.com/viewtopic.php?f=6&t=10755) - Check to make sure you have an underscore _ between the day and hour in the dates in your `namelist.wps` and not a dash - .
     * `interval_seconds = 21600` (for 6 hourly ERA data).
     * leave `io_form_geogrid = 2` for NetCDF as ungrib will convert our reanalysis data to netcdf.
   * `&ungrib`
     * `prefix`: Leave it at the default option, `FILE`.
 * Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
-  * NOTE: Here, I ran into [this](http://wrfforum.com/viewtopic.php?f=6&t=2799) error wherein it says the last required file is missing. Followed the suggestions of replacing the Vtable from [here](http://www2.mmm.ucar.edu/wrf/users/vtables/Vtable.ERA-interim_pl), but didn't work.
 
 
 <figure style="width: 400px" class="align-right">
