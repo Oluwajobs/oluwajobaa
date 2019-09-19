@@ -52,7 +52,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 * Translating the ERA-interim GRIB files into intermediate file format the MetGrid will read. Note that it does NOT cut down the data according to the domain specification yet. Execute these steps within the folder `Build_WRF/WPS/`.
 
 * Link the Vtable using `ln -sf ungrib/Variable_Tables/<name_of_Vtable> Vtable`. For exmaple, here `<name_of_Vtable> = Vtable.ERA-interim_pl`.
-* Link the location of downloaded data using `./link_grib.csh <path_to_data>`. NOTE: Make sure to link the files, not just the folder. This should create several links of the format `GRIBFILE.AAA`.
+* Link the location of downloaded data using `./link_grib.csh <path_to_data>`. NOTE: Make sure to link the files, not just the folder. There is no need to put a '\*' following the directory in the above command. The script will automatically grab all of the files beginning with the given prefix. This step should create several links of the format `GRIBFILE.AAA`.
 
 * Edit the `&share` part of [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
 
@@ -63,7 +63,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
   * `&ungrib`
     * `prefix`: Leave it at the default option, `FILE`.
 * Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
-  * NOTE: Here, I ran into [this](http://wrfforum.com/viewtopic.php?f=6&t=2799) error wherein it says the last required file is missing. Followed the suggestions of replacing the Vtable from [here](http://www2.mmm.ucar.edu/wrf/users/vtables/Vtable.ERA-interim_pl), but didn't work. 
+  * NOTE: Here, I ran into [this](http://wrfforum.com/viewtopic.php?f=6&t=2799) error wherein it says the last required file is missing. Followed the suggestions of replacing the Vtable from [here](http://www2.mmm.ucar.edu/wrf/users/vtables/Vtable.ERA-interim_pl), but didn't work.
 
 
 <figure style="width: 400px" class="align-right">
