@@ -89,7 +89,10 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 * Edit the `&geogrid` part of namelist.wps file.
   * `&geogrid`
     * Input from R domain designer.
-    * `geog_data_res = 'default','default','default',`. Possible resolutions include '30s', '2m', '5m', and '10m', where 's' is arc-second and 'm' is arc-minute.
+    * `geog_data_res`: Possible resolutions include '30s', '2m', '5m', and '10m', where 's' is arc-second and 'm' is arc-minute.
+      * Using `geog_data_res = '5m','2m','30s'` threw this error: `ERROR: Could not open /RCAC_SCRATCH/DATA/WPS_GEOG/soiltype_top_5m/index application called MPI_Abort(MPI_COMM_WORLD, 0) - process 0`.
+      * This led to a realization that I actually did not the full set of `WPS_GEOG`. I had downloaded only the highest resolution of each field. As a result, I didn't have `soiltype_top_5m`.
+      * `geog_data_res = 'default','default','default',` works but need to confirm with someone what exactly it means. 
     * `dx and dy = 9000`. Resolution of largest domain (in meters for Lambert and Mercator projection. Degrees in Lat-Lon projection).
     *  `map_proj = 'Lambert'` for mid-latitude European countries. Mercator will probably be better for India. [1=Lambert, 2=polar stereographic, 3=mercator, 6=lat-lon]
     * `ref_lat` and `ref_lon` are the center of largest domain. Use `geocode(City)` in R.
