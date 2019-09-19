@@ -6,8 +6,8 @@ permalink: /resources/
 author_profile: true
 toc: true
 toc_sticky: true
-toc_label: "Quick Links"
-toc_icon: "list-ul"  # corresponding Font Awesome icon name (without fa prefix)
+toc_label: "Jump to"
+toc_icon: "fal fa-stream"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
 Some useful tools I have built for my research. Any suggestions for improvement will be highly appreciated.
@@ -41,7 +41,7 @@ The WUDAPT project is a community-based project to gather a census of consistent
 
 <!--
 [**Post Processing using X-array](https://fabienmaussion.info/acinn_xarray_workshop/#/13): Courtesy of Fabien Maussion (University of Innsbruck).
---> 
+-->
 
 ## Remote Sensing and Geospatial Analysis
 

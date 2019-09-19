@@ -91,7 +91,7 @@ author:
       icon: "fab fa-fw fa-google"
       url: "https://scholar.google.com/citations?user=lRnptscAAAAJ&hl=en"
 
-    - label: "CV"
+    - label: "Download CV"
       icon: "far fa-fw fa-file-pdf"
       url: "/assets/files/CV.pdf"
 
