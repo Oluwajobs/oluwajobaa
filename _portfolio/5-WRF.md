@@ -108,14 +108,23 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 * No change to `namelist.wps` required. Just run `./metgrid.exe`.
 * (Optional) Make sure `METGRID.TBL` is linked correctly to `METGRID.TBL.ARW` using `ls metgrid/METGRID.TBL`. This is also true for the other three programs.
 * This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
-  * This step is failing. While the output printed "Success", several files were empty.
+  * This step was generating empty files (and yet it displays the success message). Turns out I didn't have enough space in my home drive. But this can be easily fixed by saving the outputs to the Scratch drive.
+  * Add the line `opt_output_from_metgrid_path = RCAC_SCRATCH/METGRID_FILES/` in the `&metgrid` section.
 
 
 # Part 2: [WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/index.php).
 
 ## Step 4: Create Boundary and Initial condition files
 
-*
+* Move to the `WRF/run/` folder.
+* Link the `met_em` files generated using `ln -sf RCAC_SCRATCH/METGRID_FILES/met_em.d0*`
+* Edit the [namelist.input](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wrf.html) file.
+  * `&time_control`
+  * `&domains`
+  * `&physics`
+  * `&dynamics`
+  * `&bdy_control`
+
 
 
 
