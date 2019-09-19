@@ -24,6 +24,11 @@ I have already done this part, so I'll write a page on this some other day if I 
   <figcaption>Workflow of WRF for a typical run. Source: <a href="http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/index.php">WRF Online Tutorial</a></figcaption>
 </figure>
 
+There are essentially three main steps to running the WRF Preprocessing System:
+  1. Define a model coarse domain and any nested domains with `geogrid.exe`.
+  2. Extract meteorological fields from GRIB data sets for the simulation period with `ungrib.exe`.
+  3. Horizontally interpolate meteorological fields to the model domains with `metgrid.exe`.
+
 Here, I have discussed Meteorological data first, and then Geographical. However, these are parallel processes and the order doesn't matter.
 
 ## Step 1a: Gridded Meteorological Data
