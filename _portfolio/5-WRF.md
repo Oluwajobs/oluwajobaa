@@ -55,7 +55,6 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 * Link the location of downloaded data using `./link_grib.csh <path_to_data>`. NOTE: Make sure to link the files, not just the folder. There is no need to put a '\*' following the directory in the above command. The script will automatically grab all of the files beginning with the given prefix. This step should create several links of the format `GRIBFILE.AAA`.
 
 * Edit the `&share` part of [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
-
   * `&share`
     * `start_date` and `end_date`: three times for each domain. Avoid [this error](http://forum.wrfforum.com/viewtopic.php?f=6&t=10755) - Check to make sure you have an underscore _ between the day and hour in the dates in your `namelist.wps` and not a dash - .
     * `interval_seconds = 21600` (for 6 hourly ERA data).
@@ -81,7 +80,6 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 ## Step 2b: [GEOGRID](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/GEOGRID/index.php).
 
 * Edit the `&geogrid` part of namelist.wps file.
-  *
   * `&geogrid`
     * Input from R domain designer.
     * `geog_data_res = 'default','default','default',`
@@ -95,3 +93,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 * Load ncl -- `module load ncl`. Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
 
 * Run `./geogrid.exe` to generate intermediate files in the format of `geo_em.dxx.nc` - one file for each domain saved in the WPS folder.
+
+## Step 3: [METGRID](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/METGRID/index.php).
+* No change to `namelist.wps` required. Just run `./metgrid.exe`.
+* This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
