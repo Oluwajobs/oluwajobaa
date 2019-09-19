@@ -62,8 +62,8 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
     * leave `io_form_geogrid = 2` for NetCDF as ungrib will convert our reanalysis data to netcdf.
   * `&ungrib`
     * `prefix`: Leave it at the default option, `FILE`.
-*  Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
-
+* Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
+* Given the name of a singe intermediate format file on the command line, the `./util/rd_intermediate.exe` program prints information about the fields contained in the file.
 
 <figure style="width: 400px" class="align-right">
   <img src="/assets/images/WRF-domain.png" alt="WRF">
@@ -80,12 +80,8 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 
 ## Step 2b: GEOGRID.
 
-* Edit the namelist.wps file.
-
-  * `&share`
-    * `interval_seconds = 21600` (for 6 hourly ERA data).
-    * leave `io_form_geogrid = 2` for NetCDF as ungrib will convert our reanalysis data to netcdf.
-
+* Edit the `&geogrid` part of namelist.wps file.
+  *
   * `&geogrid`
     * Input from R domain designer.
     * `geog_data_res = 'default','default','default',`
