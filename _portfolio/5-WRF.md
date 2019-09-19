@@ -108,6 +108,7 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 * No change to `namelist.wps` required. Just run `./metgrid.exe`.
 * (Optional) Make sure `METGRID.TBL` is linked correctly to `METGRID.TBL.ARW` using `ls metgrid/METGRID.TBL`. This is also true for the other three programs.
 * This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
+  * This step is failing. While the output printed "Success", several files were empty. Stuck Here. 
 
 
 # Part 2: [WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/index.php).
