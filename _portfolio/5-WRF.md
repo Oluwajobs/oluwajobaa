@@ -52,7 +52,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 * Translating the ERA-interim GRIB files into intermediate file format the MetGrid will read. Note that it does NOT cut down the data according to the domain specification yet. Execute these steps within the folder `Build_WRF/WPS/`.
 
 * Link the Vtable using `ln -sf ungrib/Variable_Tables/<name_of_Vtable> Vtable`. For exmaple, here `<name_of_Vtable> = Vtable.ERA-interim_pl`.
-* Link the location of downloaded data using `./link_grib.csh <path_to_data>`. This should create several links of the format `GRIBFILE.AAA`.
+* Link the location of downloaded data using `./link_grib.csh <path_to_data>`. NOTE: Make sure to link the files, not just the folder. This should create several links of the format `GRIBFILE.AAA`.
 
 * Edit the `&share` part of [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
 
@@ -63,7 +63,8 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
   * `&ungrib`
     * `prefix`: Leave it at the default option, `FILE`.
 * Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
-* Given the name of a singe intermediate format file on the command line, the `./util/rd_intermediate.exe` program prints information about the fields contained in the file.
+  * NOTE: Here, I ran into [this](http://wrfforum.com/viewtopic.php?f=6&t=2799) error wherein it recognizes the dates till certain point and then gives up. Followed the suggestions of replacing the Vtable from [here](http://www2.mmm.ucar.edu/wrf/users/vtables/Vtable.ERA-interim_pl), but no difference.
+
 
 <figure style="width: 400px" class="align-right">
   <img src="/assets/images/WRF-domain.png" alt="WRF">
