@@ -51,7 +51,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 
 * Translating the ERA-interim GRIB files into intermediate file format the MetGrid will read. Note that it does NOT cut down the data according to the domain specification yet. Execute these steps within the folder `Build_WRF/WPS/`.
 
-* Link the Vtable using `ln -sf ungrib/Variable_Tables/<name_of_Vtable> Vtable`. For exmaple, here `<name_of_Vtable> = Vtable.ERA-interim_pl`.
+* Link the Vtable using `ln -sf ungrib/Variable_Tables/<name_of_Vtable> Vtable`.
 * Link the location of downloaded data using `./link_grib.csh <path_to_data>`. NOTE: Make sure to link the files, not just the folder. There is no need to put a '\*' following the directory in the above command. The script will automatically grab all of the files beginning with the given prefix. This step should create several links of the format `GRIBFILE.AAA`.
 
 * Edit the `&share` part of [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
