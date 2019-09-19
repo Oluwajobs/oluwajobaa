@@ -17,7 +17,7 @@ toc_icon: "list-ul"
 
 I have already done this part, so I'll write a page on this some other day if I need to reinstall it. Meanwhile, here's a much more sophisticated link for [How to compile WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Compile/index.php) from UCAR's experts.
 
-# PART 1: WPS
+# Part 1: WPS
 
 <figure>
   <img src="/assets/images/Wrf-workflow.png" alt="WRF Workflow">
@@ -102,7 +102,7 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 * This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
 
 
-# PART 2: [WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/index.php).
+# Part 2: [WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/index.php).
 
 ## Step 4: Create Boundary and Initial condition files
 
