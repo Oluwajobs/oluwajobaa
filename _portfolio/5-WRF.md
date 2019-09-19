@@ -12,7 +12,7 @@ classes: wide
 
 # Downloading and setting up WRF environment.
 
-I have already done this part (hopefully correctly), so I'll write a page on this some other day if I need to reinstall it. Meanwhile, here's a much more sophisticated link for [How to compile WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Compile/index.php) from UCAR's experts.
+I have already done this part, so I'll write a page on this some other day if I need to reinstall it. Meanwhile, here's a much more sophisticated link for [How to compile WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Compile/index.php) from UCAR's experts.
 
 # Running a simulation in WRF.
 
@@ -45,9 +45,24 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
   * Use download option 2 that generates a Unix script to read them all using wget.
   * Copy the contents and paste them in a new file created in `$RCAC_SCRATCH` using `vi <name_of_script>` where `<name_of_script> : Wget-City-sfc.sh or Wget-City-sfc.sh` (personal convention). Within the file, update the NCAR password.
   * Make the file executable using `chmod 755 <name_of_script>`. Although mine worked regardless.
-  * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. When I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line. Then move the downloaded files to a separate folder.
+  * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. When I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line. Then move the downloaded files to a separate folder and `pwd` the location for next step.
 
 ## Step 1b: UNGRIB.
+
+* Translating the ERA-interim GRIB files into intermediate file format the MetGrid will read. Note that it does NOT cut down the data according to the domain specification yet. Execute these steps within the folder `Build_WRF/WPS/`.
+
+* Link the Vtable using `ln -sf ungrib/Variable_Tables/<name_of_Vtable> Vtable`. For exmaple, here `<name_of_Vtable> = Vtable.ERA-interim_pl`.
+* Link the location of downloaded data using `./link_grib.csh <path_to_data>`. This should create several links of the format `GRIBFILE.AAA`.
+
+* Edit the `&share` part of [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
+
+  * `&share`
+    * `start_date` and `end_date`: three times for each domain.
+    * `interval_seconds = 21600` (for 6 hourly ERA data).
+    * leave `io_form_geogrid = 2` for NetCDF as ungrib will convert our reanalysis data to netcdf.
+  * `&ungrib`
+    * `prefix`: Leave it at the default option, `FILE`.
+*  Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
 
 
 <figure style="width: 400px" class="align-right">
@@ -55,7 +70,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 </figure>
 
 
-## Step 2a: Get Static Geographical Data
+## Step 2a: Get Static Geographical Data.
 
 * Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
 
@@ -63,9 +78,9 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 
 * Use the [R script](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
 
-## Step 2b: GEOGRID:
+## Step 2b: GEOGRID.
 
-* Edit the [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
+* Edit the namelist.wps file.
 
   * `&share`
     * `interval_seconds = 21600` (for 6 hourly ERA data).
@@ -83,7 +98,4 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 
 * Load ncl -- `module load ncl`. Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
 
-* Run `./geogrid.exe` to generate output in the format of `geo_em.dxx.nc` - one file for each domain saved in the WPS folder.
-
-* `&ungrib`
-  *
+* Run `./geogrid.exe` to generate intermediate files in the format of `geo_em.dxx.nc` - one file for each domain saved in the WPS folder.
