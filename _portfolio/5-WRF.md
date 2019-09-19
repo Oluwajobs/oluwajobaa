@@ -63,7 +63,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
   * `&ungrib`
     * `prefix`: Leave it at the default option, `FILE`.
 * Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
-  * NOTE: Here, I ran into [this](http://wrfforum.com/viewtopic.php?f=6&t=2799) error wherein it recognizes the dates till certain point and then gives up. Followed the suggestions of replacing the Vtable from [here](http://www2.mmm.ucar.edu/wrf/users/vtables/Vtable.ERA-interim_pl), but no difference.
+  * NOTE: Here, I ran into [this](http://wrfforum.com/viewtopic.php?f=6&t=2799) error wherein it says the last required file is missing. Followed the suggestions of replacing the Vtable from [here](http://www2.mmm.ucar.edu/wrf/users/vtables/Vtable.ERA-interim_pl), but didn't work. 
 
 
 <figure style="width: 400px" class="align-right">
