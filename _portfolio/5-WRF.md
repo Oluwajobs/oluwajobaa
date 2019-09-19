@@ -80,7 +80,7 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 
 * Use the [R script](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
 
-<figure style="width: 200px" class="align-center">
+<figure style="width: 400px" class="align-center">
   <img src="/assets/images/WRF-domain.png" alt="WRF">
 </figure>
 
