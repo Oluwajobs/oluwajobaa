@@ -26,7 +26,7 @@ I have already done this part, so I'll write a page on this some other day if I 
 
 Here, I have discussed Meteorological data first, and then Geographical. However, these are parallel processes and the order doesn't matter.
 
-## Step 1a: Get Gridded Meteorological Data to guide the simulation.
+## Step 1a: Gridded Meteorological Data
 
 * Choosing the Reanalysis dataset: [List of available GRIB datasets from NCAR](http://www2.mmm.ucar.edu/wrf/users/download/free_data.html).
   * For Paris, I used ERA by ECMWF.
@@ -72,7 +72,7 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 </figure>
 
 
-## Step 2a: Get Static Geographical Data.
+## Step 2a: Static Geographical Data.
 
 * Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
 
@@ -104,6 +104,10 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 
 # PART 2: [WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/index.php).
 
-## Step 1: `real.exe`
+## Step 4: Create Boundary and Initial condition files
 
-*
+* 
+
+
+
+## Step 5: Run simulation
