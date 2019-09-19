@@ -72,8 +72,6 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 * Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
 * If there are any errors, `vi ungrid.log` to check what errors. `Shift+G` will take you to the last line.
 
-
-
 ## Step 2a: Static Geographical Data.
 
 * Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
@@ -108,6 +106,7 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 
 ## Step 3: [METGRID](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/METGRID/index.php).
 * No change to `namelist.wps` required. Just run `./metgrid.exe`.
+* (Optional) Make sure `METGRID.TBL` is linked correctly to `METGRID.TBL.ARW` using `ls metgrid/METGRID.TBL`. This is also true for the other three programs.
 * This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
 
 
