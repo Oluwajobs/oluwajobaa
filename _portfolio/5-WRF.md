@@ -13,7 +13,7 @@ toc_icon: "list-ul"
 
 `This is my personal notebook to help me run WRF`
 
-# Downloading and setting up WPS and WRF environment.
+# Installing WPS and WRF environment.
 
 I have already done this part, so I'll write a page on this some other day if I need to reinstall it. Meanwhile, here's a much more sophisticated link for [How to compile WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Compile/index.php) from UCAR's experts.
 
