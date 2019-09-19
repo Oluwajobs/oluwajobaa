@@ -5,23 +5,26 @@ title: "Running WRF"
 excerpt: "This is my personal notebook to help me run WRF <img src='/assets/images/Wrf-workflow.png'>"
 collection: portfolio
 author_profile: false
-classes: wide
+toc: true
+toc_sticky: true
+toc_label: "Quick Links"
+toc_icon: "list-ul"
 ---
 
 `This is my personal notebook to help me run WRF`
 
-# Downloading and setting up WRF environment.
+# Downloading and setting up WPS and WRF environment.
 
 I have already done this part, so I'll write a page on this some other day if I need to reinstall it. Meanwhile, here's a much more sophisticated link for [How to compile WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Compile/index.php) from UCAR's experts.
 
-# Running a simulation in WRF.
+# PART 1: WPS
 
 <figure style="width: 700px">
   <img src="/assets/images/Wrf-workflow.png" alt="WRF Workflow">
   <figcaption>Workflow of WRF for a typical run. Source: <a href="http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/index.php">WRF Online Tutorial</a></figcaption>
 </figure>
 
-Here, I have discusssed Meteorological data first, and then Geographical. However, these are parallel processes and the order doesn't matter.
+Here, I have discussed Meteorological data first, and then Geographical. However, these are parallel processes and the order doesn't matter.
 
 ## Step 1a: Get Gridded Meteorological Data to guide the simulation.
 
@@ -35,7 +38,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
   * Mostly they use [NCEP FNL (Final)](https://rda.ucar.edu/datasets/ds083.2/). Resolution 1 degree.
 
 * Finding the right ERA-interim Reanalysis files (Sign in required):
-  * Last time, I made the mistake of downloading NetCDF formats of ERA5 and ran into an error where it showed 0 available levels of soil depth. However, WRF/ungrib is not yet adapted to handle netCDF files. Be sure to download GRIB files.
+  * Last time, I made the mistake of downloading NetCDF formats of ERA5 and ran into an error where it showed 0 available levels of soil depth. However, `WRF/ungrib` is not yet adapted to handle netCDF files. Be sure to download GRIB files.
   * Use the "Web Server Holding" column to access the whole files, not the "Data Format Conversion" column.
   * **For atmospheric variables:** Use the "[ERA Interim atmospheric model analysis interpolated to pressure levels](https://rda.ucar.edu/datasets/ds627.0/index.html#!cgi-bin/datasets/getWebList?dsnum=627.0&gindex=6)" group for WRF, not the "ERA Interim atmospheric model analysis on model levels" group.
   * **For surface variables:** Use "[ERA Interim atmospheric model analysis for surface](https://rda.ucar.edu/datasets/ds627.0/index.html#cgi-bin/datasets/getWebList?dsnum=627.0&action=customize&disp=&gindex=9)" group.
@@ -49,9 +52,9 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 
 ## Step 1b: [UNGRIB](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/UNGRIB/index.php).
 
-* Translating the ERA-interim GRIB files into intermediate file format the MetGrid will read. Note that it does NOT cut down the data according to the domain specification yet. Execute these steps within the folder `Build_WRF/WPS/`.
+* Translating the ERA-interim GRIB files into intermediate file format the MetGrid will read. Note that it does NOT cut down the data according to the domain specification yet.
 
-* Link the Vtable using `ln -sf ungrib/Variable_Tables/<name_of_Vtable> Vtable`.
+* Link the Vtable using `ln -sf ungrib/Variable_Tables/<name_of_Vtable> Vtable`. Execute these steps within the folder `Build_WRF/WPS/`.
 * Link the location of downloaded data using `./link_grib.csh <path_to_data>`. NOTE: Make sure to link the files, not just the folder. There is no need to put a '\*' following the directory in the above command. The script will automatically grab all of the files beginning with the given prefix. This step should create several links of the format `GRIBFILE.AAA`.
 
 * Edit the `&share` part of [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
@@ -97,3 +100,10 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 ## Step 3: [METGRID](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/METGRID/index.php).
 * No change to `namelist.wps` required. Just run `./metgrid.exe`.
 * This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
+
+
+# PART 2: [WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/index.php).
+
+## Step 1: `real.exe`
+
+*
