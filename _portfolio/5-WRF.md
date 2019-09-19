@@ -34,7 +34,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
   * In Google Earth Engine, I usually use the [NCEP/NCAR Reanalysis dataset](https://rda.ucar.edu/datasets/ds090.0/) to visualize air temperatures. But its resolution is 209 km, not the best for intra-urban applications.
   * Mostly they use [NCEP FNL (Final)](https://rda.ucar.edu/datasets/ds083.2/). Resolution 1 degree.
 
-* [Finding the right ERA-interim Reanalysis files](https://rda.ucar.edu/datasets/ds627.0/#!access) (Sign in required):
+* Finding the right ERA-interim Reanalysis files (Sign in required):
   * Last time, I made the mistake of downloading NetCDF formats of ERA5 and ran into an error where it showed 0 available levels of soil depth. However, WRF/ungrib is not yet adapted to handle netCDF files. Be sure to download GRIB files.
   * Use the "Web Server Holding" column to access the whole files, not the "Data Format Conversion" column.
   * **For atmospheric variables:** Use the "[ERA Interim atmospheric model analysis interpolated to pressure levels](https://rda.ucar.edu/datasets/ds627.0/index.html#!cgi-bin/datasets/getWebList?dsnum=627.0&gindex=6)" group for WRF, not the "ERA Interim atmospheric model analysis on model levels" group.
@@ -47,7 +47,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
   * Make the file executable using `chmod 755 <name_of_script>`. Although mine worked regardless.
   * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. When I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line. Then move the downloaded files to a separate folder and `pwd` the location for next step.
 
-## Step 1b: UNGRIB.
+## Step 1b: [UNGRIB](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/UNGRIB/index.php).
 
 * Translating the ERA-interim GRIB files into intermediate file format the MetGrid will read. Note that it does NOT cut down the data according to the domain specification yet. Execute these steps within the folder `Build_WRF/WPS/`.
 
@@ -78,7 +78,7 @@ Here, I have discusssed Meteorological data first, and then Geographical. Howeve
 
 * Use the [R script](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
 
-## Step 2b: GEOGRID.
+## Step 2b: [GEOGRID](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/GEOGRID/index.php).
 
 * Edit the `&geogrid` part of namelist.wps file.
   *
