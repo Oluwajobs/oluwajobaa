@@ -19,7 +19,7 @@ I have already done this part, so I'll write a page on this some other day if I 
 
 # PART 1: WPS
 
-<figure style="width: 700px">
+<figure>
   <img src="/assets/images/Wrf-workflow.png" alt="WRF Workflow">
   <figcaption>Workflow of WRF for a typical run. Source: <a href="http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/index.php">WRF Online Tutorial</a></figcaption>
 </figure>
@@ -67,7 +67,7 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 * Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
 
 
-<figure style="width: 400px" class="align-right">
+<figure>   <!--- style="width: 400px" class="align-right"--->
   <img src="/assets/images/WRF-domain.png" alt="WRF">
 </figure>
 
@@ -106,7 +106,7 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 
 ## Step 4: Create Boundary and Initial condition files
 
-* 
+*
 
 
 
