@@ -72,11 +72,6 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 * Run `./ungrib.exe` to generate intermediate files in the format of `FILE:YYYY-MM-DD_hh` - one file for each time.
 
 
-<figure>   <!--- style="width: 400px" class="align-right"--->
-  <img src="/assets/images/WRF-domain.png" alt="WRF">
-</figure>
-
-
 ## Step 2a: Static Geographical Data.
 
 * Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
@@ -85,12 +80,16 @@ Here, I have discussed Meteorological data first, and then Geographical. However
 
 * Use the [R script](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
 
+<figure style="width: 200px" class="align-center">
+  <img src="/assets/images/WRF-domain.png" alt="WRF">
+</figure>
+
 ## Step 2b: [GEOGRID](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/GEOGRID/index.php).
 
 * Edit the `&geogrid` part of namelist.wps file.
   * `&geogrid`
     * Input from R domain designer.
-    * `geog_data_res = 'default','default','default',`
+    * `geog_data_res = 'default','default','default',`. Possible resolutions include '30s', '2m', '5m', and '10m', where 's' is arc-second and 'm' is arc-minute.
     * `dx and dy = 9000`. Resolution of largest domain (in meters for Lambert and Mercator projection. Degrees in Lat-Lon projection).
     *  `map_proj = 'Lambert'` for mid-latitude European countries. Mercator will probably be better for India. [1=Lambert, 2=polar stereographic, 3=mercator, 6=lat-lon]
     * `ref_lat` and `ref_lon` are the center of largest domain. Use `geocode(City)` in R.
