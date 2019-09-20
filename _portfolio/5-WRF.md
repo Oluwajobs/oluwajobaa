@@ -118,7 +118,7 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 
 * Move to the `WRF/run/` folder.
 * Link the `met_em` files generated using `ln -sf RCAC_SCRATCH/METGRID_FILES/met_em.d0*`
-* Edit the [namelist.input](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wrf.html) file.
+* Edit the [namelist.input](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wrf.html) file. (Coming up tomorrow)
   * `&time_control`
   * `&domains`
   * `&physics`
