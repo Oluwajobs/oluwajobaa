@@ -122,12 +122,15 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
     * `interval_seconds = 21600`: the time interval of Reanalysis dataset.
     * `input_from_file = .true.`: Setting this to .true. for nested domains will allow the real.exe program to create `wrfinput_d0*` files for the nested domains.
     * `history_interval = 60`: frequency of output files in minutes (set to hourly)
+    * `history_outname = $RCAC_SCRATCH/WRFOUTS/<City_name>/wrfout_d<domain>_<date>` (personal convention). This is an [optional feature](http://forum.wrfforum.com/viewtopic.php?f=6&t=5572) to save the outputs in another directory.
     * `frames_per_outfile`: Number of hourly output files to be combined in one. Set it to 1000 to set upto 40 days worth of output into a single file.
     * `restart_interval = 1440`: Backing up every X minute to restart run from that point if WRF crashes. Ideally keep it at 6 hours (360), maybe 1 day (1440) for long runs.
     * Keep `io_form_* = 2` for NEtCDF formats.
 
   * `&domains`
-    * `time_step`: Time step (in seconds) for integration. This should be kept low. About 5 to 6 times the grid size of largest domain, i.e. 45 seconds for 9 km cases.
+    * `time_step = 45`: Time step (in seconds) for integration. This should be kept low. About 5 to 6 times the grid size of largest domain, i.e. 45 seconds for 9 km cases.
+      * But I ran into [CFL error](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/verify.php) with 45 seconds. They typically indicate that the model is becoming unstable. The first thing to do in such a case is to rerun the model with a reduced time step. Reduce `time_step = 36` seconds.
+    * `parent_time_step_ratio  = 1, 3, 9,` scales the time step as well for each domain.
     * `e_sn` and `e_we`: same as `namelist.wps`.
     * `e_vert`: Vertical levels. It is not recommended to have fewer than 35 levels. Typically 40-60 levels is recommended. For NYC July 2006 heat wave, 60 were used.
     * `p_top_requested = 5000`: Default value for the pressure top (in Pa) to use in the model.
@@ -183,8 +186,22 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 
 * Within the `WRF/run/` folder, link the `met_em` files generated using `ln -sf RCAC_SCRATCH/METGRID_FILES/met_em.d0* .`
 * Run `./real.exe`
-  * Ran into [this error](http://forum.wrfforum.com/viewtopic.php?f=6&t=10010). Solution is listed in the [known problems list](http://www2.mmm.ucar.edu/wrf/users/wrfv3.8/known-prob-3.8.1.html) under ERA-Interim data problem.
-  * In the section `&physics`, add the line `surface_input_source = 1` to overwrite the default value of 3.
-  * This create `wrfbdy_d01`, `wrfinput_d01`, `wrfinput_d02`, and `wrfinput_d03` files. Along with `namelist.output`, `rsl.out` and `rsl.error` files, which will clearly specify the error, or say "SUCCESS COMPLETE REAL_EM INIT" if they are no errors.
+  * Ran into [this error](http://forum.wrfforum.com/viewtopic.php?f=6&t=10010). Solution is listed in the [known problems list](http://www2.mmm.ucar.edu/wrf/users/wrfv3.8/known-prob-3.8.1.html) under ERA-Interim data problem --> In the section `&physics`, add the line `surface_input_source = 1` to overwrite the default value of 3.
+  * This creates `wrfbdy_d01`, `wrfinput_d01`, `wrfinput_d02`, and `wrfinput_d03` files. Along with `namelist.output`, `rsl.out` and `rsl.error` files, which will clearly specify the error, or say "SUCCESS COMPLETE REAL_EM INIT" if they are no errors.
 
 ## Step 6: Submit WRF run
+
+* Use `qlist` to find out how many nodes are available in each queue.
+* We wrote a script called `WRF/run/qsubmit.sh` to submit WRF runs to Halstead clusters.
+  * `#!/bin/sh -l`: Specifying the format
+  * `# FILENAME: uhi`: Commented description of run.
+  * `#PBS -q <q_name>`: Chosen queue
+  * `#PBS -l nodes=5:ppn=20`: In [Halstead](https://www.rcac.purdue.edu/compute/halstead) every node contains 20 processor per node (ppn). So, we select 5 nodes of 20 ppn each.
+  * `#PBS -l walltime=72:00:00`: Time after which Halstead will kill our process.
+  * `#PBS -N PARIS`: Job Name.
+  * `mpiexec -n 100 <path_to_WRF>/run/wrf.exe`: Command with address to execute it.
+* Run the script using `qsub <path_to_file>/qsubmit.sh`
+* Use `qstat -u $USER` to check status.
+* Remember to run `./real.exe` again if you modify anything in `namelist.input` before submitting WRF run again.
+
+## Step 7: Rinse. Repeat.
