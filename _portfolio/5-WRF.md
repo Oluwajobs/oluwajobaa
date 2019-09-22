@@ -204,4 +204,4 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 * Use `qstat -u $USER` to check status.
 * Remember to run `./real.exe` again if you modify anything in `namelist.input` before submitting WRF run again.
 
-## Step 7: Rinse. Repeat.
+# Part 3: Rinse. Repeat.
