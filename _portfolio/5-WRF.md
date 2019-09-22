@@ -139,7 +139,7 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
     * ` parent_time_step_ratio = 1, 3, 9,` same as the `parent_grid_ratio`.
     * `feedack = 1` and `smooth_option = 0` for updating the parent domain based on nested domains.
 
-  * `&physics` [Available options](http://www2.mmm.ucar.edu/wrf/users/docs/user_guide_V3.8/users_guide_chap5.htm#Phys)
+  * `&physics` [Available options](http://www2.mmm.ucar.edu/wrf/users/docs/user_guide_V3.8/users_guide_chap5.htm#Phys) [Overview](http://www2.mmm.ucar.edu/wrf/users/tutorial/201601/physics.pdf) [References](http://www2.mmm.ucar.edu/wrf/users/phys_references.html#URBAN)
     * `physics_suite`:
     * `mp_physics`:
     * `cu_physics`:
