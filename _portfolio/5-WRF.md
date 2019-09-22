@@ -118,14 +118,14 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 
 * Move to the `WRF/run/` folder.
 * Link the `met_em` files generated using `ln -sf RCAC_SCRATCH/METGRID_FILES/met_em.d0*`
-* Edit the [namelist.input](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wrf.html) file. (Coming up tomorrow)
+* Edit the [namelist.input](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wrf.html) file. (Here's a list of what I used for Paris run)
   * `&time_control`
     * No need to specify number of days and hours. Set those to 0. Set start and end dates.
-    * `interval_seconds`: the time interval of Reanalysis dataset.
+    * `interval_seconds = 21600`: the time interval of Reanalysis dataset.
     * `input_from_file = .true.`: Setting this to .true. for nested domains will allow the real.exe program to create `wrfinput_d0*` files for the nested domains.
-    * `history_interval`: frequency of output files in minutes (set to hourly)
+    * `history_interval = 60`: frequency of output files in minutes (set to hourly)
     * `frames_per_outfile`: Number of hourly output files to be combined in one. Set it to 1000 to set upto 40 days worth of output into a single file.
-    * `restart_interval`: Backing up every X minute to restart run from that point if WRF crashes. Ideally keep it at 6 hours (360), maybe 1 day (1440) for long runs.
+    * `restart_interval = 1440`: Backing up every X minute to restart run from that point if WRF crashes. Ideally keep it at 6 hours (360), maybe 1 day (1440) for long runs.
     * Keep `io_form_* = 2` for NEtCDF formats.
 
   * `&domains`
@@ -133,27 +133,27 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
     * `e_sn` and `e_we`: same as `namelist.wps`.
     * `e_vert`: Vertical levels. It is not recommended to have fewer than 35 levels. Typically 40-60 levels is recommended. For NYC July 2006 heat wave, 60 were used.
     * `p_top_requested = 5000`: Default value for the pressure top (in Pa) to use in the model.
-    * Now use the command `ncdump -h met_em.d01.<date>` in the folder with `met_em` files to find out the valure of the following variables.
-      * `num_metgrid_levels = 38` (near top)
+    * Now use the command `ncdump -h met_em.d01.<date>` in the folder with `met_em` files to find out the values of the following variables.
+      * `num_metgrid_levels = 38` (For ERA-interim)
       * `num_metgrid_soil_levels = 4` (near bottom)
-    * ` parent_time_step_ratio` same as the `parent_grid_ratio`.
+    * ` parent_time_step_ratio = 1, 3, 9,` same as the `parent_grid_ratio`.
     * `feedack = 1` and `smooth_option = 0` for updating the parent domain based on nested domains.
 
-  * `&physics`
-    * `physics_suite`                       = 'CONUS'
-    * `mp_physics`                          = -1,    -1,    -1,
-    * `cu_physics`                          = -1,    -1,     0,
-    * `ra_lw_physics`                       = -1,    -1,    -1,
-    * `ra_sw_physics`                       = -1,    -1,    -1,
-    * `bl_pbl_physics`                      = -1,    -1,    -b1,
-    * `sf_sfclay_physics`                   = -1,    -1,    -1,
-    * `sf_surface_physics`                  = -1,    -1,    -1,
-    * `radt`                                = 30,    30,    30,
-    * `bldt`                                = 0,     0,     0,
-    * `cudt`                                = 5,     5,     5,
-    * `icloud`                              = 1,
-    * `num_land_cat`                        = 21,
-    * `sf_urban_physics`                    = 0,     0,     0,
+  * `&physics` [Available options](http://www2.mmm.ucar.edu/wrf/users/docs/user_guide_V3.8/users_guide_chap5.htm#Phys)
+    * `physics_suite`:
+    * `mp_physics`:
+    * `cu_physics`:
+    * `ra_lw_physics`:
+    * `ra_sw_physics`:
+    * `bl_pbl_physics = 8, 8, 8,`: Bougeault and Lacarrere (BouLac) PBL
+    * `sf_sfclay_physics`:
+    * `sf_surface_physics`:
+    * `radt`:
+    * `bldt`:
+    * `cudt`:
+    * `icloud`:
+    * `num_land_cat`:
+    * `sf_urban_physics = ` 1 for single layer UCM, 2 for Multi-layer, BEP scheme (works only with MYJ and BouLac PBL).
 
   * `&dynamics`
   * `&bdy_control`
