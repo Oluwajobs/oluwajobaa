@@ -139,23 +139,62 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
     * ` parent_time_step_ratio = 1, 3, 9,` same as the `parent_grid_ratio`.
     * `feedack = 1` and `smooth_option = 0` for updating the parent domain based on nested domains.
 
-  * `&physics` [Available options](http://www2.mmm.ucar.edu/wrf/users/docs/user_guide_V3.8/users_guide_chap5.htm#Phys) [Overview](http://www2.mmm.ucar.edu/wrf/users/tutorial/201601/physics.pdf) [References](http://www2.mmm.ucar.edu/wrf/users/phys_references.html#URBAN)
-    * `physics_suite`:
-    * `mp_physics`:
-    * `cu_physics`:
-    * `ra_lw_physics`:
-    * `ra_sw_physics`:
-    * `bl_pbl_physics = 8, 8, 8,`: Bougeault and Lacarrere (BouLac) PBL
-    * `sf_sfclay_physics`:
-    * `sf_surface_physics`:
-    * `radt`:
+  * `&physics` - [Available options](http://www2.mmm.ucar.edu/wrf/users/docs/user_guide_V3.8/users_guide_chap5.htm#Phys). Options recommended for 1 – 4 km grid distances, convection-permitting runs for a 1- 3 day run (as used for the NCAR spring real-time convection forecast over the US in 2013) are noted as "NCAR recommended".
+    * `physics_suite =` Set to either CONUS or Tropical tunes the remaining parameters to a saved setting. Delete this option.
+    * `mp_physics = 8,8,8,`
+      * 8 = NCAR recommended
+    * `cu_physics = 2,0,0,`
+      * 0 = Not used, because at a high resolution of 1 km, we can explicitly resolve the cumulus clouds, no need to parameterize them.
+      * 1 = Kain-Fritsch scheme.
+      * 2 = Betts-Miller-Janjic scheme.
+    * `ra_lw_physics = 1,1,1,`
+      * 1 = Rapid Radiative Transfer Model (RRTM) used in NYC 2006 run.
+      * 4 = Updated RRTMG. (CONUS, NCAR recommended)
+    * `ra_sw_physics = 1,1,1,`
+      * 1 = Dudhia Scheme.
+      * 4 = RRTMG shortwave (CONUS, NCAR recommended)
+    * `bl_pbl_physics = 2,2,2,`
+      * 2 = Mellor-Yamada-Janjic (MYJ) scheme. (NYC, NCAR, CONUS default)
+      * 8 = Bougeault and Lacarrere (BouLac) PBL scheme.
+    * `sf_sfclay_physics = 2,2,2,`
+      * 2 = Eta similarity: Based on Monin-Obukhov with Zilitinkevich thermal roughness length (NYC 2006, NCAR recommended).
+    * `sf_surface_physics = 2,2,2,`
+      * 2 = Noah Land Surface Model (CONUS)
+      * 4 = Noah-MP (multi-physics) Land Surface Model
+      * 5 = Community Land Model (CLM)
+    * `radt = 30,30,10`:
     * `bldt`:
-    * `cudt`:
-    * `icloud`:
-    * `num_land_cat`:
-    * `sf_urban_physics = ` 1 for single layer UCM, 2 for Multi-layer, BEP scheme (works only with MYJ and BouLac PBL).
+    * `cudt = 0`: minutes between cumulus physics calls. 0 = call every time step. This should be set to 0 when using all cu_physics except Kain-Fritsch (`cu_physics = 1`)
+    * `icloud = 1`: use Xu-Randall method
+    * `num_land_cat`: Number of Land categories in input dataset
+      * 24 = USGS (pre V3.8 default)
+      * 20 = MODIS
+      * 28 = USGS including lake category
+      * 21 = MODIS (post V3.8 default)
+      * 40 = NLCD (CONUS only)
+    * `sf_urban_physics = `
+      * 1 = single layer Urban Canopy Model (UCM),
+      * 2 = Multi-layer, Building Environment Parameterization (BEP) scheme (works only with `sf_surface_physics = 2` (Noah LSM) and `bl_pbl_physics = 2 or 8` (MYJ or BouLac PBL).
+      * 3 = Building Energy Model (BEM)
 
   * `&dynamics`
+    * `hybrid_opt = 2`
+    * `w_damping = 0`
+    * `diff_opt = 1`
+    * `km_opt= 4` 3 is Smagorinsky
+    * `diff_6th_opt = 0`
+    * `diff_6th_factor = 0.12`
+    * `base_temp = 290.`
+    * `damp_opt  = 3`
+    * `zdamp  = 5000.`
+    * `dampcoef = 0.2`
+    * `khdif = 0,`
+    * `kvdif = 0,`
+    * `non_hydrostatic = .true.`
+    * `moist_adv_opt = 1`
+    * `scalar_adv_opt = 1`
+    * `gwd_opt = 1,`
+
   * `&bdy_control`
 
 
