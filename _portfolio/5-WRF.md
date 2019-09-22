@@ -114,11 +114,9 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 
 # Part 2: [WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/index.php).
 
-## Step 4: Create Boundary and Initial condition files
+## Step 4: Setup namelist.input
 
-* Move to the `WRF/run/` folder.
-* Link the `met_em` files generated using `ln -sf RCAC_SCRATCH/METGRID_FILES/met_em.d0*`
-* Edit the [namelist.input](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wrf.html) file. (Here's a list of what I used for Paris run)
+* Edit the [namelist.input](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wrf.html) file in the `WRF/run/` folder. (Here's a list of what I used for Paris run)
   * `&time_control`
     * No need to specify number of days and hours. Set those to 0. Set start and end dates.
     * `interval_seconds = 21600`: the time interval of Reanalysis dataset.
@@ -179,11 +177,14 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 
   * `&dynamics`
     * `km_opt= 4` 3 = Smagorinsky 3d deformation (NYC). 4 = 2d deformation
-    * Don't modify anything else. 
+    * Don't modify anything else.
 
-  * `&bdy_control`
+## Step 5: Run Real.exe
 
+* Within the `WRF/run/` folder, link the `met_em` files generated using `ln -sf RCAC_SCRATCH/METGRID_FILES/met_em.d0* .`
+* Run `./real.exe`
+  * Ran into [this error](http://forum.wrfforum.com/viewtopic.php?f=6&t=10010). Solution is listed in the [known problems list](http://www2.mmm.ucar.edu/wrf/users/wrfv3.8/known-prob-3.8.1.html) under ERA-Interim data problem.
+  * In the section `&physics`, add the line `surface_input_source = 1` to overwrite the default value of 3.
+  * This create `wrfbdy_d01`, `wrfinput_d01`, `wrfinput_d02`, and `wrfinput_d03` files. Along with `namelist.output`, `rsl.out` and `rsl.error` files, which will clearly specify the error, or say "SUCCESS COMPLETE REAL_EM INIT" if they are no errors.
 
-
-
-## Step 5: Run simulation
+## Step 6: Submit WRF run
