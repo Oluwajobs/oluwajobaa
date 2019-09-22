@@ -67,9 +67,6 @@ author:
   bio    : "NASA Earth Science Fellow. PhD candidate at Purdue University."
   location: "Palo Alto, CA"
   links:
-  #  - label: "Website"
-  #    icon: "fas fa-fw fa-link"
-  #    url: "https://Anamika255.github.io"
 
     - label: "Email"
       icon: "far fa-fw fa-paper-plane"
