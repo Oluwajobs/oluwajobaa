@@ -17,7 +17,7 @@ Some useful tools I have built for my research. Any suggestions for improvement 
 
 ## Research groups
 
-Some of the awesome research groups that I have had the pleasure to work with. Check them out and get in touch if you want to collaborate, or work with, or be a part of, or just chat.
+Some of the awesome research groups that I have had the pleasure to work with. Check them out and get in touch if you want to collaborate, be a part of, or just chat.
 
 * [Complex Networks Synthesis group](https://www.ufz.de/cawr/index.php?en=43129)
 
@@ -59,6 +59,8 @@ I am extremely passionate about data visualization and visual story-telling. Her
 [**Complexity Explorables**](http://www.complexity-explorables.org/): Interacting with complex systems is the best way to understand the simple rules that gives rise to chaotic outcomes. I encourage you to play around and find analogies to any system of your interest. |
 
 [**NetLogo**](https://ccl.northwestern.edu/netlogo/): Agent-based modeling visualized. |
+
+[**Shiny Apps in R**](https://www.rstudio.com/products/shinyapps/): Make interactive web applications for your data analysis using RStudio. |
 
 [**How much hotter is your hometown?**](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html): On climate change communication. |
 
