@@ -23,14 +23,14 @@ feature_row:
   - image_path: /assets/images/World_Map.png
     alt: "Research"
     title: "Research"
-    excerpt: "Brief introduction to the research themes of my interest"
+    excerpt: "Brief introduction to my research"
     url: "/research/"
     btn_class: "btn--primary"
     btn_label: "Research"
   - image_path: /assets/images/Networks.jpg
     alt: "Projects"
     title: "Other Projects"
-    excerpt: "Collection of some of my interesting scholarly projects"
+    excerpt: "Assorted collection of some of scholarly projects that aren't published"
     url: "/projects/"
     btn_class: "btn--primary"
     btn_label: "Projects"
