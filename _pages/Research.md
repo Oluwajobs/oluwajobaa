@@ -18,13 +18,13 @@ gallery:
 ---
 
 
-<figure style="width: 450px" class="align-right">
+<figure style="width: 400px" class="align-right">
   <img src="/assets/images/Research-Venn-white.png" alt="Research Venn">
 </figure>
 
-I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue University. My research interests are at the intersection of Complex Systems and Urban Climate. I have a sustained interest in the complexity, inter-dependency, and dynamism of complex socio-technological urban systems, and am very passionate about engineering smart, resilient cities. My doctoral research is focused on characterizing **intra-urban complexity** of the Urban Heat Island. Prior to my Ph.D., I obtained degrees in Civil and Architectural Engineering from the Indian Institute of Technology and Purdue respectively.
+I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue University. My research interests are at the intersection of Complex Systems and Urban Climate. I have a sustained interest in the complexity, inter-dependency, and dynamism of complex socio-technological urban systems, and am passionate about engineering smart, resilient cities. My doctoral research is focused on characterizing **intra-urban complexity** of the Urban Heat Island. Prior to my Ph.D., I obtained degrees in Civil and Architectural Engineering from the Indian Institute of Technology and Purdue respectively.
 
-
+Urban Land Cover Land Use 
 {% include gallery %}
 
 

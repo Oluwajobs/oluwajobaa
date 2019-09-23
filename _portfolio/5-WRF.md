@@ -5,6 +5,10 @@ title: "WRF diaries"
 excerpt: "This is my personal notebook to help me run WRF <img src='/assets/images/Wrf-workflow.png'>"
 collection: portfolio
 author_profile: false
+author_profile: false
+sidebar:
+  title: "Sample Title"
+  nav: sidebar-sample
 toc: true
 toc_sticky: true
 toc_label: "Quick Links"
