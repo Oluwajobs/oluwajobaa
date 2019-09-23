@@ -16,7 +16,7 @@ gallery:
 classes: wide
 ---
 
-I love to perform live music, and I am the guitarist and vocalist of an indo-western fusion band at Purdue called [Tatvam](https://www.facebook.com/TatvamPurdue/). We have performed at several live sets at Purdue, Lafayette, Urbana-Champaign, and Chicago.
+I love to perform live music, and I am the singer/guitarist of an indo-western fusion band at Purdue called [Tatvam](https://www.facebook.com/TatvamPurdue/). We have performed several live sets at Purdue, Lafayette, Urbana-Champaign, and Chicago. I do mostly covers, and have only ever written one original song, that was for my best friend, bandmate, fellow scientist, and now husband - [Sai Prasanth](https://sites.google.com/view/saiprasanth).
 
 <!--{% include gallery class="full" caption="Bandmates and me" %}-->
 
