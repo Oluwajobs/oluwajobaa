@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/Networks.jpg
     alt: "Projects"
     title: "Other Projects"
-    excerpt: "Assorted collection of some of scholarly projects that aren't published"
+    excerpt: "Assorted collection of some of my scholarly projects that aren't published"
     url: "/projects/"
     btn_class: "btn--primary"
     btn_label: "Projects"
