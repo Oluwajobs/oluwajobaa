@@ -23,14 +23,14 @@ feature_row:
   - image_path: /assets/images/World_Map.png
     alt: "Research"
     title: "Research"
-    excerpt: "My doctoral research is focussed on the spatial complexity of intra-urban heat island"
+    excerpt: "Brief introduction to the research themes of my interest"
     url: "/research/"
     btn_class: "btn--primary"
     btn_label: "Research"
   - image_path: /assets/images/Networks.jpg
     alt: "Projects"
     title: "Other Projects"
-    excerpt: "A brief summary of some interesting projects I have done"
+    excerpt: "Collection of some of my interesting scholarly projects"
     url: "/projects/"
     btn_class: "btn--primary"
     btn_label: "Projects"
