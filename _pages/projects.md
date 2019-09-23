@@ -16,10 +16,10 @@ Here's a collection of my projects. I will try to keep this page as updated as p
 Here's how to add link to the pages (/assets/files/C40_report.pdf)
 
 ### Other projects coming up soon.
+-->
 
 {% include base_path %}
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
 {% endfor %}
--->
