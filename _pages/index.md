@@ -43,6 +43,8 @@ feature_row:
     btn_label: "Resources"
 ---
 
+
+<!--
 {% include feature_row %}
 
 <!--
