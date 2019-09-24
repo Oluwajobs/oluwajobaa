@@ -1,5 +1,4 @@
 ---
-title: "Quick look into my research"
 layout: single
 classes: wide
 sitemap: true
@@ -15,10 +14,6 @@ gallery:
     image_path: /assets/images/RGL_hetero.gif
     alt: "placeholder image 2"
     title: "A highly heterogeneous polycentric DEM"
-  - url: /assets/images/RGL_hetero.gif
-    image_path: /assets/images/RGL_hetero.gif
-    alt: "placeholder image 2"
-    title: "A highly heterogeneous polycentric DEM"
 ---
 
 
@@ -26,10 +21,27 @@ gallery:
   <img src="/assets/images/Research-Venn-white.png" alt="Research Venn">
 </figure>
 
-I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue University. My research interests are at the intersection of Complex Systems and Urban Climate. I have a sustained interest in the complexity, inter-dependency, and dynamism of complex socio-technological urban systems, and am passionate about engineering smart, resilient cities. My doctoral research is focused on characterizing **intra-urban complexity** of the Urban Heat Island. Prior to my Ph.D., I obtained degrees in Civil and Architectural Engineering from the Indian Institute of Technology and Purdue respectively.
+I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue University. I have a sustained interest in the complexity, inter-dependency, and dynamism of complex socio-technological urban systems, and am passionate about engineering smart, resilient cities. My research interests are at the intersection of Statistical Physics, Complex Networks, Urban Meteorology, and Remote Sensing. My doctoral thesis is focused on characterizing *intra-urban complexity* of the Urban Heat Island. Prior to my Ph.D., I obtained degrees in Civil and Architectural Engineering from the Indian Institute of Technology and Purdue respectively.
 
-Fractal intra-urban heat islets.
-{% include gallery %}
+
+# Doctoral Research
+
+#{% include gallery %}
+
+## Fractal intra-urban heat islets.
+Urban areas experience elevated temperatures due to the urban heat island (UHI) effect which is usually characterized by the difference between mean urban and mean rural temperatures. However, temperatures within cities vary considerably and their spatial heterogeneity is not well characterized. Inspired by the fractal nature of cities, I show that the surface urban heat island (SUHI) can be characterized as a collection of several heterogeneous thermal clusters that display fractal properties. [Here](https://eartharxiv.org/t9s3g/), we use Land Surface Temperature (LST) of 78 global cities to show that the Surface UHI (SUHI) is fractal. We use percentile-based thermal thresholds to identify heat clusters emerging within SUHI and refer to them collectively as **intra-urban heat \textit{islets}**. The islets display properties analogous to that of a percolating system as we vary the thermal thresholds. At percolation threshold, the size distribution of these islets in all cities follows a power-law, with a scaling exponent ($\beta$) of 1.88 and an aggregated Perimeter Fractal Dimension ($D$) of 1.33. This commonality indicates that despite the diversity in urban form and function across the world, the urban temperature patterns are different realizations with the same aggregated statistical properties. Furthermore, we observe the convergence of these scaling exponents as the city sizes increase. Therefore, while the effect of diverse urban morphologies is evident in smaller cities, in the mean, the larger cities are alike. Lastly, we calculate the mean islet intensities, i.e. the difference between mean islet temperature and thermal threshold, and show that it follows an exponential distribution, with rate parameter, $\lambda$, for all cities. $\lambda$ varied widely across the cities and can be used to quantify the spatial heterogeneity within SUHIs. We present a basis for a unified characterization of urban heat from the spatial scales of an urban block to a megalopolis.
+
+## How does the spatial organization of urban morphology impact the emergence of extreme heat in cities?
+Cities are at the forefront of climate change impacts and face a growing burden of adaptation to ensuing natural hazards. Extreme heat is a particularly challenging hazard as persistent heatwaves are locally exacerbated by the Urban Heat Island (UHI) effect. As a result, there is an increasing scientific interest in the influence of diverse urban morphologies on UHI. [Here](https://eartharxiv.org/gxj9m/), we develop a novel multi-scale framework of quantifying spatial heterogeneity in the Surface UHI. We first develop a Lacunarity based metric to quantify the spatial organization of heat islets at various degrees of sprawl and densification. Using probabilistic models, we condense the size, spacing, and intensity information about heterogeneous clusters into distributions that can be described using single scaling exponents. This allows for a seamless comparison of the heat islet characteristics across cities at varying spatial scales. From the size distribution analysis, we observe the emergence of two distinct classes wherein the dense cities follow a Pareto size distribution, whereas the sprawling cities show an exponential tempering of Pareto tail. This indicates a significantly reduced probability of encountering large heat islets for sprawling cities. Contrastingly, however, Heat Islet Intensity modeled as exponential distributions reveal that a sprawling configuration is favorable for reducing the mean temperature of a city. However, for the same mean SUHI intensity, it also results in higher local thermal extremes. This poses a paradox for urban designers in adopting expansion versus densification as a growth trajectory to mitigate the UHI.
+
+## Influence of heat waves on intra-urban heat islets
+I am currently working in collaboration with NOAA's [Center for Earth System Sciences and Remote Sensing Technologies (NOAA-CESSRST)](https://www.noaacrest.org/) to explore the impact of mesoscale heat waves on the dynamics of intra-urban heat islets.
+
+
+# Master's Research
+
+## Resilience Analysis of Climate Proofing strategies of cities.
+Urban Resilience is the capacity of individuals, communities, institutions, businesses, and systems within a city to survive, adapt, and grow despite any acute shock or chronic stress that might occur. And with the advent of climate change, it is becoming more important to help our communities withstand the subsequent extreme weather events. Cities around the world have come together in a global network called the [C-40](https://www.c40.org/), in an attempt to “climate proof” themselves. Here, we investigate the [top 100 strategies](https://issuu.com/sustainia/docs/cities100) adopted by world’s leading cities in the year 2015 using the [Resilience Landscape model](https://www.ecologyandsociety.org/vol9/iss2/art5/inline.html), which describes the four components of resilience – resistance, latitude, precariousness, and panarchy. Each individual strategy from the case studies was studied as a component of resilience built. Preliminary analysis reveals that most of them are focused on reducing Carbon emissions only. It brings into question if reducing emissions can equate to climate proofing. With this model of resilience, we are able to demonstrate the application of various aspects of resilience in a holistic way.
 
 
 <!--
