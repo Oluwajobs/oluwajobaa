@@ -80,61 +80,6 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 
 * Use the [R script](/assets/files/WRF_domain.pdf) to visualize and configure domains. Note: It is recommended to have domains no smaller than about 100x100 each. Keep about 10 grid points (minimum of 5) on each side, in the boundary zone. If domains are too small, the solution will be determined by forcing data.
 
-```r
-Offset_domain <- function(City, Dom1, Dom2, Dom3,
-                Ratio1 = 1, Ratio2 = 1, Ratio3 = 1,
-                Offset2_we = 0, Offset2_sn = Offset2_we,
-                Offset3_we = 0, Offset3_sn = Offset3_we){
-
-######## ALONG EAST-WEST DIRECTION ################  
-
-  GridCells1_we <- Dom1/9     ## GridCells in Domain 1 of size 9 km each
-  GridCells1_we <- 18*ceiling(GridCells1_we/18)   ## Rounding off to evenly fit
-
-  GridCells2_we <- Dom2/3     ## GridCells in Domain 2 of size 3 km each
-  GridCells2_we <- 18*ceiling(GridCells2_we/18) ## Rounding off to evenly fit
-  GridCells2_1_we <- GridCells2_we/3   ## GridCells in Domain 2 of size 9 km each
-
-  GridCells3_we <- Dom3/1     ## GridCells in Domain 3 of size 1 km each
-  GridCells3_we <- 18*ceiling(GridCells3_we/18) ## Rounding off to evenly fit
-  GridCells3_1_we <- GridCells3_we/9   ## GridCells in Domain 3 of size 9 km each
-
-  Start2_we <- (GridCells1_we - GridCells2_1_we)/2 + Offset2_we
-  Start3_we <- (GridCells1_we - GridCells3_1_we)/2 + Offset3_we
-  e_we <- c(GridCells1_we, GridCells2_we+1,GridCells3_we+1)
-  i_parent_start <- c(1, Start2_we, Start3_we)
-
-######## ALONG EAST-WEST DIRECTION ################  
-  GridCells1_sn <- Dom1*Ratio1/9     ## GridCells in Domain 1 of size 9 km each
-  GridCells1_sn <- 18*ceiling(GridCells1_sn/18)   ## Rounding off to evenly fit
-
-  GridCells2_sn <- Dom2*Ratio2/3     ## GridCells in Domain 2 of size 3 km each
-  GridCells2_sn <- 18*ceiling(GridCells2_sn/18) ## Rounding off to evenly fit
-  GridCells2_1_sn <- GridCells2_sn/3   ## GridCells in Domain 2 of size 9 km each
-
-  GridCells3_sn <- Dom3*Ratio3/1     ## GridCells in Domain 3 of size 1 km each
-  GridCells3_sn <- 18*ceiling(GridCells3_sn/18) ## Rounding off to evenly fit
-  GridCells3_1_sn <- GridCells3_sn/9   ## GridCells in Domain 3 of size 9 km each
-
-  Start2_sn <- (GridCells1_sn - GridCells2_1_sn)/2 + Offset2_sn
-  Start3_sn <- (GridCells1_sn - GridCells3_1_sn)/2 + Offset3_sn
-  e_sn <- c(GridCells1_sn, GridCells2_sn+1,GridCells3_sn+1)
-  j_parent_start <- c(1, Start2_sn, Start3_sn)
-
-  WRF_out <- data.table(rbind(c("parent_id",1,1,1),
-                              c("parent_grid_ratio",1,3,9),
-                              c("i_parent_start",i_parent_start),
-                              c("j_parent_start",j_parent_start),
-                              c("e_we",e_we),
-                              c("e_sn",e_sn)))
-
-  colnames(WRF_out) <-  c("Label", "Domain 1", "Domain 2", "Domain 3")
-  print(WRF_out)
-
-  return(WRF_out)
-}
-```
-
 <figure style="width: 400px" class="align-center">
   <img src="/assets/images/WRF-domain.png" alt="WRF">
 </figure>
