@@ -35,7 +35,7 @@ Cities are at the forefront of climate change impacts and face a growing burden 
 ## Influence of heat waves on intra-urban heat islets
 I am currently working in collaboration with NOAA's [Center for Earth System Sciences and Remote Sensing Technologies (NOAA-CESSRST)](https://www.noaacrest.org/) to explore the impact of mesoscale heat waves on the dynamics of intra-urban heat islets.
 
-{% include gallery caption="Representing Land Surface Temperatures as Digital Elevation Models (DEM) where elevation and color indicate temperature. This is a schematic gif showing percentile based thresholding of fractal landscapes."% }
+{% include gallery caption="Representing Land Surface Temperatures as Digital Elevation Models (DEM) where elevation and color indicate temperature. This is a schematic gif showing percentile based thresholding of fractal landscapes." %}
 
 <!--
 # Master's Research
