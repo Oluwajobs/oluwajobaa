@@ -40,7 +40,7 @@ I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue U
 
 | **Resilience Analysis of Climate Proofing strategies of cities** <br> <br> Cities are at the forefront of climate change impacts and face a growing burden of adaptation to ensuing natural hazards. In response, the global network of [C-40 Cities](https://www.c40.org/) have adopted various strategies to “climate proof” themselves. Here, we use the Stability Landscape model of a *ball-in-a-bowl*, adapted from [Walker et. al. (2004)](https://www.ecologyandsociety.org/vol9/iss2/art5/inline.html), to investigate the [top 100 strategies](https://issuu.com/sustainia/docs/cities100) of 2015 from an Urban Resilience viewpoint. With this model, we are able to demonstrate the need and possible pathways for adaptation to climate extremes in a more comprehensive way. <br><br> [[View Poster](/assets/files/C40_AMS-Poster.pdf)] [[Presentation](/assets/files/C40_report.pdf)] | <img src="/assets/images/C40-header.png" width="2400px" alt="C40"> |
 
-| **Impact of spatial organization of Local Climate Zones on Urban Surface temperatures** <br> <br>
+| **Impact of spatial organization of Local Climate Zones on Urban Surface temperatures** <br> <br> 
 
 
 <!--

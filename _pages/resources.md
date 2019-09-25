@@ -25,7 +25,7 @@ Networks are basic structures underlying many natural, social and engineered sys
 
 * [World Urban Database and Access Portal Tools](http://www.wudapt.org/)
 
-The WUDAPT project is a community-based project to gather a census of consistent urban land use land classes maps for cities around the world. [Get LCZ maps](https://wudapt.cs.purdue.edu/wudaptTools/default/getlcz). |
+WUDAPT is an international community-generated urban canopy information and modeling infrastructure to facilitate urban-focused climate, weather, air quality, and energy-use modeling application studies. [Get LCZ maps](https://wudapt.cs.purdue.edu/wudaptTools/default/getlcz). |
 
 <figure>
   <img src="/assets/images/TUD-pic.png"  alt="Group">
