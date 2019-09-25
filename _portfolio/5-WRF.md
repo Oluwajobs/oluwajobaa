@@ -74,7 +74,7 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 
 ## Step 2a: Static Geographical Data.
 
-* Download and save the highest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - and save it in `$RCAC_SCRATCH`.
+* Download and save the highest resolution as well as the lowest resolution of each field from here - [Geographical Input Data Mandatory Fields Downloads](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html) - using `wget` and save it in `$RCAC_SCRATCH`.
 
 * Unlike meteorological data, there is no need to download Geographic data every time because this is just static.
 
@@ -90,9 +90,8 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
   * `&geogrid`
     * Input from R domain designer.
     * `geog_data_res`: Possible resolutions include '30s', '2m', '5m', and '10m', where 's' is arc-second and 'm' is arc-minute.
-      * Using `geog_data_res = '5m','2m','30s'` threw this error: `ERROR: Could not open /RCAC_SCRATCH/DATA/WPS_GEOG/soiltype_top_5m/index application called MPI_Abort(MPI_COMM_WORLD, 0) - process 0`.
-      * This led to a realization that I actually did not the full set of `WPS_GEOG`. I had downloaded only the highest resolution of each field. As a result, I didn't have `soiltype_top_5m`.
-      * `geog_data_res = 'default','default','default',` works but need to confirm with someone what exactly it means.
+      * Using `geog_data_res = '5m','2m','30s'` threw this error: `ERROR: Could not open /RCAC_SCRATCH/DATA/WPS_GEOG/soiltype_top_2m/index application called MPI_Abort(MPI_COMM_WORLD, 0) - process 0`.
+      * `geog_data_res = '5m','5m','30s',` works.
     * `dx and dy = 9000`. Resolution of largest domain (in meters for Lambert and Mercator projection. Degrees in Lat-Lon projection).
     *  `map_proj = 'Lambert'` for mid-latitude European countries. Mercator will probably be better for India. [1=Lambert, 2=polar stereographic, 3=mercator, 6=lat-lon]
     * `ref_lat` and `ref_lon` are the center of largest domain. Use `geocode(City)` in R.
