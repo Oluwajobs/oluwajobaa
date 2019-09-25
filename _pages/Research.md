@@ -30,9 +30,7 @@ I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue U
 
 | **Paradox of expansion vs densification for reducing extreme urban heat** <br> <br> Cities are at the forefront of climate change impacts and face a growing burden of adaptation to ensuing natural hazards such as extreme heat. As a result, there is an increasing scientific interest in the influence of diverse urban morphologies on UHI. Here, we build upon the multi-scale framework of intra-urban heat islets and investigate the impact of expansion (sprawl) vs densification of cities on the emergence of extreme heat islets. We find that a sprawling configuration is favorable for reducing the mean temperature of a city. However, for the same mean SUHI intensity, it also results in higher local thermal extremes.  <br> <br> Read more: [[EarthArXiv Preprint](https://eartharxiv.org/gxj9m/)] [In review with Scientific Reports] | <img src="/assets/images/NSR_pic.png" width="1800px" alt=""> |
 
-### Influence of heat waves on intra-urban heat islets
-
-I am currently working in collaboration with NOAA's [Center for Earth System Sciences and Remote Sensing Technologies (NOAA-CESSRST)](https://www.noaacrest.org/) to explore the impact of mesoscale heat waves on the dynamics of intra-urban heat islets. |
+| **Influence of heat waves on intra-urban heat islets** <br> <br> I am currently working in collaboration with NOAA's Center for Earth System Sciences and Remote Sensing Technologies ([NOAA-CESSRST](https://www.noaacrest.org/)) to explore the impact of mesoscale heat waves on the dynamics of intra-urban heat islets. |
 
 {% include gallery caption="Representing Land Surface Temperatures as Digital Elevation Models (DEM) where elevation and color indicate temperature. This is a schematic gif showing percentile based thresholding of fractal landscapes." %}
 
