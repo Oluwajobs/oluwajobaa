@@ -28,7 +28,8 @@ I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue U
 
 ### Fractal intra-urban heat islets.
 
-| Surface Urban Heat Islands (SUHI) are traditionally quantified by a bulk metric of SUHI Intensity. However, cities are highly spatially heterogeneous and temperatures within vary widely. Inspired by the [fractal nature of cities](http://www.complexcity.info/), I used statistical Physics to characterize the complexity of SUHI. Here, I show for the first time, that for diverse cities across the world, SUHIs are fractal in nature. This self-similarity can be leveraged to develop improved metrics of quantifying intra-urban thermal complexity. | <img src="/assets/images/RGL_hetero.gif" width="400px" alt=""> |
+| <img src="/assets/images/RGL_hetero.gif" width="400px" alt=""> | Surface Urban Heat Islands (SUHI) are traditionally quantified by a bulk metric of SUHI Intensity. However, cities are highly spatially heterogeneous and temperatures within vary widely. Inspired by the [fractal nature of cities](http://www.complexcity.info/), I used statistical Physics to characterize the complexity of SUHI. Here, I show for the first time, that for diverse cities across the world, SUHIs are fractal in nature. This self-similarity can be leveraged to develop improved metrics of quantifying intra-urban thermal complexity. |
+
 
 ### How does the spatial organization of urban morphology impact the emergence of extreme heat in cities?
 
