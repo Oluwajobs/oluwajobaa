@@ -17,7 +17,7 @@ gallery:
 ---
 
 
-<figure style="width: 400px" class="align-right">
+<figure style="width: 370px" class="align-right">
   <img src="/assets/images/Research-Venn.png" alt="Research Venn">
 </figure>
 
