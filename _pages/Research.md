@@ -26,7 +26,7 @@ I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue U
 
 ## Doctoral Research Themes
 
-| <img src="/assets/images/RGL_hetero.gif" width="1000px" alt=""> | **Fractal intra-urban heat islets** <br> Surface Urban Heat Islands (SUHI) are traditionally quantified by a bulk metric of SUHI Intensity. However, cities are highly spatially heterogeneous and temperatures within vary widely. Inspired by the [fractal nature of cities](http://www.complexcity.info/), in this [Phys. Rev. E paper](https://eartharxiv.org/t9s3g), we show for the first time, that for diverse cities across the world, SUHIs are fractal in nature. We analyze the SUHI as a collection of *intra-urban heat islets* and leverage the self-similarity to develop comprehensive metrics to quantify intra-urban thermal complexity. <br> Read more: [[SPIE Remote Sensing](https://doi.org/10.1117/12.2501441)] [[EarthArXiv Preprint](https://eartharxiv.org/t9s3g)] [[Phys. Rev. E.](https://eartharxiv.org/t9s3g)] |
+| <img src="/assets/images/PRE_pic.png" width="1000px" alt=""> | **Fractal intra-urban heat islets** <br> Surface Urban Heat Islands (SUHI) are traditionally quantified by a bulk metric of SUHI Intensity. However, cities are highly spatially heterogeneous and temperatures within vary widely. Inspired by the [fractal nature of cities](http://www.complexcity.info/), we show for the first time, that for diverse cities across the world, SUHIs are fractal in nature. We analyze the SUHI as a collection of *intra-urban heat islets* and leverage the self-similarity to develop comprehensive metrics to quantify intra-urban thermal complexity. <br> Read more: [[SPIE Remote Sensing](https://doi.org/10.1117/12.2501441)] [[EarthArXiv Preprint](https://eartharxiv.org/t9s3g)] [[Phys. Rev. E.](https://eartharxiv.org/t9s3g)] |
 
 ### How does the spatial organization of urban morphology impact the emergence of extreme heat in cities?
 
@@ -36,9 +36,9 @@ Cities are at the forefront of climate change impacts and face a growing burden 
 
 I am currently working in collaboration with NOAA's [Center for Earth System Sciences and Remote Sensing Technologies (NOAA-CESSRST)](https://www.noaacrest.org/) to explore the impact of mesoscale heat waves on the dynamics of intra-urban heat islets. |
 
-<!--
+
 {% include gallery caption="Representing Land Surface Temperatures as Digital Elevation Models (DEM) where elevation and color indicate temperature. This is a schematic gif showing percentile based thresholding of fractal landscapes." %}
--->
+
 
 
 # Master's Research Themes
