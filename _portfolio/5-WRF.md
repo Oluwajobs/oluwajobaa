@@ -173,7 +173,7 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
       * 28 = USGS including lake category
       * 21 = MODIS (post V3.8 default)
       * 40 = NLCD (CONUS only)
-    * `sf_urban_physics = `
+    * `sf_urban_physics = 2`
       * 1 = single layer Urban Canopy Model (UCM),
       * 2 = Multi-layer, Building Environment Parameterization (BEP) scheme (works only with `sf_surface_physics = 2` (Noah LSM) and `bl_pbl_physics = 2 or 8` (MYJ or BouLac PBL).
       * 3 = Building Energy Model (BEM)
