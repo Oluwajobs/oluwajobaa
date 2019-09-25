@@ -21,7 +21,7 @@ gallery:
   <img src="/assets/images/Research-Venn.png" alt="Research Venn">
 </figure>
 
-I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue University. I have a sustained interest in the complexity, inter-dependency, and dynamism of complex socio-technological urban systems, and am passionate about engineering smart, resilient cities. My research interests are at the intersection of Statistical Physics, Complex Networks, Urban Meteorology, and Remote Sensing. My doctoral thesis is focused on characterizing *intra-urban complexity* of the Urban Heat Island. Prior to my Ph.D., I obtained degrees in Civil and Architectural Engineering from the Indian Institute of Technology and Purdue respectively.
+I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue University. My research interests are at the intersection of Statistical Physics, Complex Networks, Urban Meteorology, and Remote Sensing. I have a sustained interest in the complexity, inter-dependency, and dynamism of complex socio-technological urban systems, and am passionate about engineering smart, resilient cities. My doctoral thesis is focused on characterizing *intra-urban complexity* of the Urban Heat Island. Prior to my Ph.D., I obtained degrees in Civil and Architectural Engineering from the Indian Institute of Technology and Purdue respectively.
 
 
 ## Doctoral Research Themes
@@ -48,7 +48,7 @@ I am currently working in collaboration with NOAA's [Center for Earth System Sci
 
 Urban Resilience is the capacity of individuals, communities, institutions, businesses, and systems within a city to survive, adapt, and grow despite any acute shock or chronic stress that might occur. And with the advent of climate change, it is becoming more important to help our communities withstand the subsequent extreme weather events. Cities around the world have come together in a global network called the [C-40](https://www.c40.org/), in an attempt to “climate proof” themselves. [Here](/assets/files/C40_report.pdf), we investigate the [top 100 strategies](https://issuu.com/sustainia/docs/cities100) adopted by world’s leading cities in the year 2015 using the [Resilience Landscape model](https://www.ecologyandsociety.org/vol9/iss2/art5/inline.html), which describes the four components of resilience – resistance, latitude, precariousness, and panarchy. Each individual strategy from the case studies was studied as a component of resilience built. Preliminary analysis reveals that most of them are focused on reducing Carbon emissions only. It brings into question if reducing emissions can equate to climate proofing. With this model of resilience, we are able to demonstrate the application of various aspects of resilience in a holistic way. |
 
-### 
+###
 
 <!--
 ## Building Energy Usage
