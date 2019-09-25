@@ -104,11 +104,12 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 * Run `./geogrid.exe` to generate intermediate files in the format of `geo_em.dxx.nc` - one file for each domain saved in the WPS folder.
 
 ## Step 3: [METGRID](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/METGRID/index.php).
-* No change to `namelist.wps` required. Just run `./metgrid.exe`.
+* Add the line `opt_output_from_metgrid_path = RCAC_SCRATCH/METGRID_FILES/` in the `&metgrid` section.
+* Run `./metgrid.exe`.
 * (Optional) Make sure `METGRID.TBL` is linked correctly to `METGRID.TBL.ARW` using `ls metgrid/METGRID.TBL`. This is also true for the other three programs.
 * This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
   * This step was generating empty files (and yet it displays the success message). Turns out I didn't have enough space in my home drive. But this can be easily fixed by saving the outputs to the Scratch drive.
-  * Add the line `opt_output_from_metgrid_path = RCAC_SCRATCH/METGRID_FILES/` in the `&metgrid` section.
+
 
 
 # Part 2: [WRF](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/WRF/index.php).
