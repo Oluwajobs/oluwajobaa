@@ -32,7 +32,7 @@ author_profile: true
 
 # Conference presentations
 
-2019/12 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2018, December). Fractal topography of the intra-urban thermal landscape. *Nonlinear Geophysics. AGU Fall Meetings, Washington, DC.* (Oral) [link](http://adsabs.harvard.edu/abs/2018AGUFMNG41A..04S){: .btn .btn--inverse} |
+2018/12 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2018, December). Fractal topography of the intra-urban thermal landscape. *Nonlinear Geophysics. AGU Fall Meetings, Washington, DC.* (Oral) [link](http://adsabs.harvard.edu/abs/2018AGUFMNG41A..04S){: .btn .btn--inverse} |
 
 2018/09 | **Shreevastava, A.**, McGrath, G., Rao, P.S.C. (2018, September) Spatial analysis of the Surface Urban Heat Island. *SPIE Asia-Pacific Remote Sensing Conference, Honolulu, HI.* (Oral) [link](https://spie.org/AE/conferencedetails/land-surface-and-cryosphere-remote-sensing#session-3){: .btn .btn--inverse} |
 
