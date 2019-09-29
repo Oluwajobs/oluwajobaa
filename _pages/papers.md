@@ -17,7 +17,7 @@ author_profile: true
 
 # Journal publications
 
-2019 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2019). Emergent self-similarity and scaling properties of fractal intra-urban heat islets for diverse global cities. *Physical Reviews E*. [doi]{https://doi.org/10.1103/PhysRevE.100.032142}{: .btn .btn--inverse} [preprint](https://eartharxiv.org/t9s3g){: .btn .btn--inverse} [dataset](https://osf.io/53t2g/){: .btn .btn--inverse} |
+2019 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2019). Emergent self-similarity and scaling properties of fractal intra-urban heat islets for diverse global cities. *Physical Reviews E*. [doi](https://doi.org/10.1103/PhysRevE.100.032142){: .btn .btn--inverse} [preprint](https://eartharxiv.org/t9s3g){: .btn .btn--inverse} [dataset](https://osf.io/53t2g/){: .btn .btn--inverse} |
 
 2019 | **Shreevastava, A.**, Bhalachandran, S., McGrath, G.S., Huber, M., & Rao, P.S.C. (2019). Paradoxical impact of sprawling intra-Urban Heat Islets: Reducing mean surface temperatures while enhancing local extremes. *Scientific Reports* (in review). [preprint](https://eartharxiv.org/gxj9m/){: .btn .btn--inverse} [dataset](https://osf.io/9srdp/){: .btn .btn--inverse} |
 
