@@ -62,6 +62,8 @@ I am extremely passionate about data visualization and visual story-telling. Her
 
 [**Shiny Apps in R**](https://www.rstudio.com/products/shinyapps/): Make interactive web applications for your data analysis using RStudio. |
 
+[**Interactive Web Apps in R**](https://dash-gallery.plotly.host/Portal/): Dash, the fastest growing framework for building analytic web applications, is now available for R.
+
 [**How much hotter is your hometown?**](https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html): On climate change communication. |
 
 <!-- [Hottest year on record](https://www.bloomberg.com/graphics/hottest-year-on-record/) -->
