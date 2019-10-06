@@ -27,10 +27,10 @@ Networks are basic structures underlying many natural, social and engineered sys
 
 WUDAPT is an international community-generated urban canopy information and modeling infrastructure to facilitate urban-focused climate, weather, air quality, and energy-use modeling application studies. [Get LCZ maps](https://wudapt.cs.purdue.edu/wudaptTools/default/getlcz). |
 
-<figure>
+<!-- <figure>
   <img src="/assets/images/TUD-pic.png"  alt="Group">
   <figcaption>Synthesis Workshop (2016) at TU,Dresden, Germany (<a href="https://www.ufz.de/cawr/index.php?en=41799">Source</a>)</figcaption>
-</figure>
+</figure> -->
 
 <!-- Extre link: [Complex Networks Synthesis Workshops](https://www.ufz.de/cawr/index.php?en=42471) -->
 
