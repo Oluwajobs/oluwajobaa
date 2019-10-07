@@ -38,6 +38,7 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
   * Mostly they use [NCEP FNL (Final)](https://rda.ucar.edu/datasets/ds083.2/). Resolution 1 degree.
   * For USA, [NCEP North American Mesoscale (NAM)](https://rda.ucar.edu/datasets/ds609.0/) with 12 km 6 hourly outputs (Vtable: `Vtable.NAM`) might be better. (Will update when I run USA case studies)
   * For New Delhi, I used [NCEP GDAS/FNL 0.25 Degree](https://rda.ucar.edu/datasets/ds083.3/).
+    * V-table called `Vtable.GFS` should be used and can be found [here](http://www2.mmm.ucar.edu/wrf/users/vtables/Vtable.GFS).
   * For Paris, I used ERA by ECMWF.
     * [ERA-interim](https://rda.ucar.edu/datasets/ds627.0/) has GRIB files.
     * [ERA5 Reanalysis](https://rda.ucar.edu/datasets/ds630.0/) has NetCDF outputs only.
@@ -52,11 +53,12 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
   * **For surface variables:** Use "[ERA Interim atmospheric model analysis for surface](https://rda.ucar.edu/datasets/ds627.0/index.html#cgi-bin/datasets/getWebList?dsnum=627.0&action=customize&disp=&gindex=9)" group.
 
 * Downloading the files.
-  * Pick "[Faceted Browse](https://rda.ucar.edu/datasets/ds627.0/index.html#cgi-bin/datasets/getWebList?dsnum=627.0&action=customize&disp=&gindex=6)" and enter the time period of interest. The files are huge (over 100 MB each) so only download the time period needed. Case of Paris: Time period - July 19th to August 10th, 2018.
+  * Pick "[Faceted Browse](https://rda.ucar.edu/datasets/ds627.0/index.html#cgi-bin/datasets/getWebList?dsnum=627.0&action=customize&disp=&gindex=6)" and enter the time period of interest. The files are huge (over 100 MB each) so only download the time period needed.
   * Use download option 2 that generates a Unix script to read them all using wget.
-  * Copy the contents and paste them in a new file created in `$RCAC_SCRATCH` using `vi <name_of_script>` where `<name_of_script> : Wget-City-sfc.sh or Wget-City-sfc.sh` (personal convention). Within the file, update the NCAR password.
+  * Copy the contents and paste them in a new file created in `$RCAC_SCRATCH` using `vi <name_of_script>`. Within the file, update the NCAR password.
   * Make the file executable using `chmod 755 <name_of_script>`. Although mine worked regardless.
   * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. When I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line. Then move the downloaded files to a separate folder and `pwd` the location for next step.
+  * Possible wget error: `HTTP request sent, awaiting response... 403 Forbidden`.
 
 ## Step 1b: [UNGRIB](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/UNGRIB/index.php).
 
