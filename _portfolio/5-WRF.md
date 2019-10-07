@@ -58,7 +58,7 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
   * Copy the contents and paste them in a new file created in `$RCAC_SCRATCH` using `vi <name_of_script>`. Within the file, update the NCAR password.
   * Make the file executable using `chmod 755 <name_of_script>`. Although mine worked regardless.
   * Note that this is a `.csh` script so run it using `csh Wget-City-atm.sh` but save it as `.sh` nonetheless. When I create a `.csh` type file, the text gets pasted with a `#` comment sign in front of every line. Then move the downloaded files to a separate folder and `pwd` the location for next step.
-  * Possible wget error: `HTTP request sent, awaiting response... 403 Forbidden`.
+  * Possible wget error: `HTTP request sent, awaiting response... 403 Forbidden`. Solution: Sign out of NCAR website and sign in again and accept the new terms and conditions.  
 
 ## Step 1b: [UNGRIB](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/UNGRIB/index.php).
 
