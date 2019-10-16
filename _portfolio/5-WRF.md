@@ -25,9 +25,9 @@ I have already done this part, so I'll write a page on this some other day if I 
 </figure>
 
 There are essentially three main steps to running the WRF Preprocessing System:
-  1. Define a model coarse domain and any nested domains with `geogrid.exe`.
-  2. Extract meteorological fields from GRIB data sets for the simulation period with `ungrib.exe`.
-  3. Horizontally interpolate meteorological fields to the model domains with `metgrid.exe`.
+  1. Define a model coarse domain and any nested domains with `geogrid.exe`
+  2. Extract meteorological fields from GRIB data sets for the simulation period with `ungrib.exe`
+  3. Horizontally interpolate meteorological fields to the model domains with `metgrid.exe`
 
 Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These are parallel processes and the order doesn't matter.
 
@@ -64,8 +64,8 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 
 * Translating the ERA-interim GRIB files into intermediate file format the MetGrid will read. Note that it does NOT cut down the data according to the domain specification yet.
 
-* Link the Vtable using `ln -sf ungrib/Variable_Tables/<name_of_Vtable> Vtable`. Execute these steps within the folder `Build_WRF/WPS/`.
-* Link the location of downloaded data using `./link_grib.csh <path_to_data>`. NOTE: Make sure to link the files, not just the folder. There is no need to put a '\*' following the directory in the above command. The script will automatically grab all of the files beginning with the given prefix. This step should create several links of the format `GRIBFILE.AAA`.
+* Link the Vtable using `ln -sf ungrib/Variable_Tables/<name_of_Vtable> Vtable` Execute these steps within the folder `Build_WRF/WPS/`.
+* Link the location of downloaded data using `./link_grib.csh <path_to_data> .(here)` NOTE: Make sure to link the files, not just the folder. There is no need to put a '\*' following the directory in the above command. The script will automatically grab all of the files beginning with the given prefix. This step should create several links of the format `GRIBFILE.AAA`.
 
 * Edit the `&share` part of [namelist.wps](http://www2.mmm.ucar.edu/wrf/users/namelist_best_prac_wps.html) file. The current run specifications should always be stored as `namelist.wps` (in `Build_WRF/WPS/`). Therefore, backup the original and keep renaming the completed runs.
   * `&share`
@@ -104,13 +104,13 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
     * `stand_lon = ref_lon`: If this longitude is set to the same value as ref_lon, your largest domain will be centered.
     * `geog_data_path`: Location of Geographical dataset `WPS_GEOG` in RCAC_SCRATCH.
 
-* Load ncl -- `module load ncl`. Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
+* Load ncl -- `module load ncl` Then run `ncl util/plotgrids_new.ncl` to make sure geogrid is in order.
 
 * Run `./geogrid.exe` to generate intermediate files in the format of `geo_em.dxx.nc` - one file for each domain saved in the WPS folder.
 
 ## Step 3: [METGRID](http://www2.mmm.ucar.edu/wrf/OnLineTutorial/Basics/METGRID/index.php).
 * Add the line `opt_output_from_metgrid_path = RCAC_SCRATCH/METGRID_FILES/` in the `&metgrid` section.
-* Run `./metgrid.exe`.
+* Run `./metgrid.exe`
 * (Optional) Make sure `METGRID.TBL` is linked correctly to `METGRID.TBL.ARW` using `ls metgrid/METGRID.TBL`. This is also true for the other three programs.
 * This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
   * This step was generating empty files (and yet it displays the success message). Turns out I didn't have enough space in my home drive. But this can be easily fixed by saving the outputs to the Scratch drive.
