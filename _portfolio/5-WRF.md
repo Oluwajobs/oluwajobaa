@@ -191,9 +191,10 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 
 ## Step 5: Run Real.exe
 
-* Within the `WRF/run/` folder, link the `met_em` files generated using `ln -sf RCAC_SCRATCH/METGRID_FILES/met_em.d0* .`
+* Within the `WRF/run/` folder, link the `met_em` files generated using `ln -sf RCAC_SCRATCH/METGRID_FILES/met_em.d0* .(here)`
 * Run `./real.exe`
-  * Ran into [this error](http://forum.wrfforum.com/viewtopic.php?f=6&t=10010). Solution is listed in the [known problems list](http://www2.mmm.ucar.edu/wrf/users/wrfv3.8/known-prob-3.8.1.html) under ERA-Interim data problem --> In the section `&physics`, add the line `surface_input_source = 1` to overwrite the default value of 3.
+  * For Paris, ran into [this error](http://forum.wrfforum.com/viewtopic.php?f=6&t=10010). Solution is listed in the [known problems list](http://www2.mmm.ucar.edu/wrf/users/wrfv3.8/known-prob-3.8.1.html) under ERA-Interim data problem --> In the section `&physics`, add the line `surface_input_source = 1` to overwrite the default value of 3.
+  * For LA, ran into NLCD error. Downloading NLCD urban fraction dataset for CONUS from [here](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html#specific).
   * This creates `wrfbdy_d01`, `wrfinput_d01`, `wrfinput_d02`, and `wrfinput_d03` files. Along with `namelist.output`, `rsl.out` and `rsl.error` files, which will clearly specify the error, or say "SUCCESS COMPLETE REAL_EM INIT" if they are no errors.
 
 ## Step 6: Submit WRF run
