@@ -139,9 +139,9 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
     * `e_sn` and `e_we`: same as `namelist.wps`.
     * `e_vert`: Vertical levels. It is not recommended to have fewer than 35 levels. Typically 40-60 levels is recommended. For NYC July 2006 heat wave, 60 were used.
     * `p_top_requested = 5000`: Default value for the pressure top (in Pa) to use in the model.
-    * Now use the command `ncdump -h met_em.d01.<date>` in the folder with `met_em` files to find out the values of the following variables.
-      * `num_metgrid_levels = 38` (For ERA-interim)
-      * `num_metgrid_soil_levels = 4` (near bottom)
+    * **Now use the command `ncdump -h met_em.d01.<date>` in the folder with `met_em` files to find out the values of the following variables.
+      * `num_metgrid_levels` (near top)
+      * `num_metgrid_soil_levels` (near bottom)**
     * ` parent_time_step_ratio = 1, 3, 9,` same as the `parent_grid_ratio`.
     * `feedack = 1` and `smooth_option = 0` for updating the parent domain based on nested domains.
 
