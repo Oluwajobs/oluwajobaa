@@ -184,7 +184,9 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
       * 3 = Building Energy Model (BEM)
 
   * `&dynamics`
-    * `km_opt= 4` 3 = Smagorinsky 3d deformation (NYC). 4 = 2d deformation
+    * `km_opt= 4`
+      * 3 = Smagorinsky 3d deformation (NYC).
+      * 4 = 2d deformation
     * Don't modify anything else.
 
 ## Step 5: Run Real.exe
