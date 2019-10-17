@@ -97,6 +97,7 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
     * `geog_data_res`: Possible resolutions include '30s', '2m', '5m', and '10m', where 's' is arc-second and 'm' is arc-minute.
       * Using `geog_data_res = '5m','2m','30s'` threw this error: `ERROR: Could not open /RCAC_SCRATCH/DATA/WPS_GEOG/soiltype_top_2m/index application called MPI_Abort(MPI_COMM_WORLD, 0) - process 0`.
       * `geog_data_res = '5m','5m','30s',` works.
+      * used `nlcd2011_ll_9s+urbfrac_nlcd2011+30s` for NLCD.
     * `dx and dy = 9000`. Resolution of largest domain (in meters for Lambert and Mercator projection. Degrees in Lat-Lon projection).
     *  `map_proj = 'Lambert'` for mid-latitude European countries. Mercator will probably be better for India. [1=Lambert, 2=polar stereographic, 3=mercator, 6=lat-lon]
     * `ref_lat` and `ref_lon` are the center of largest domain. Use `geocode(City)` in R.
@@ -114,6 +115,7 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
 * (Optional) Make sure `METGRID.TBL` is linked correctly to `METGRID.TBL.ARW` using `ls metgrid/METGRID.TBL`. This is also true for the other three programs.
 * This will generate netCDF outputs of the format `met_em.dxx.YYYY-MM-DD_hh:00:00.nc` - one file per time per domain.
   * This step was generating empty files (and yet it displays the success message). Turns out I didn't have enough space in my home drive. But this can be easily fixed by saving the outputs to the Scratch drive.
+  * For LA, ran into [this error](http://www.wrfforum.com/viewtopic.php?f=21&t=2387).
 
 
 
