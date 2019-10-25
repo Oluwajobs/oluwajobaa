@@ -72,7 +72,7 @@ I am extremely passionate about data visualization and visual story-telling. Her
 
 [**The art of spaced repetition**](https://ncase.me/remember/): To accept that the expertise you once had will fade with time. All we can do is find time to relearn old tricks as we learn new ones. |
 
-[**Calendar. Not to-do lists.**](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check this out this amazing blog post.|
+[**Calendar. Not to-do lists.**](https://blog.usejournal.com/calendar-in-stead-of-to-do-lists-9ada86a512dd): When it comes to time management, I am not a calendar-based planner. But if you are, check out this amazing blog post.|
 
 [**WorkFlowy**](https://workflowy.com/): Instead, I like to make lists! |
 
