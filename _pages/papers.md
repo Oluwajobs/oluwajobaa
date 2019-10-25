@@ -15,7 +15,7 @@ author_profile: true
 [Light Outline Button](#link){: .btn .btn--inverse}
 -->
 
-# Journal publications
+## Journal publications
 
 2019 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2019). Emergent self-similarity and scaling properties of fractal intra-urban heat islets for diverse global cities. *Physical Reviews E*. [doi](https://doi.org/10.1103/PhysRevE.100.032142){: .btn .btn--inverse} [preprint](https://eartharxiv.org/t9s3g){: .btn .btn--inverse} [dataset](https://osf.io/53t2g/){: .btn .btn--inverse} |
 
@@ -30,7 +30,7 @@ author_profile: true
 
 <br>
 
-# Conference presentations
+## Conference presentations
 
 2019/12 | **Shreevastava, A.**, Bhalachandran, S., Ramamurthy, P., and Rao, P.S.C. (2019, December). Impact of heat waves on intra-urban thermal heterogeneity. *Global Environment Change. AGU Fall Meeting, San Francisco, CA.* (Upcoming)
 
@@ -50,7 +50,7 @@ author_profile: true
 
 <br>
 
-# Seminars, workshops, and invited talks
+## Seminars, workshops, and invited talks
 
 2019/08 | Spatial correlation of inequalities in building energy usage and regions of extreme heat. *Centre for Advaced Spatial Analysis (CASA), University College London (UCL), London, UK* [link](https://www.ucl.ac.uk/bartlett/casa/news/2019/jun/casa-doctoral-summer-school-advanced-spatial-modelling){: .btn .btn--inverse}. |
 
