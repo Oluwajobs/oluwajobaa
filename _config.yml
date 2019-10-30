@@ -30,7 +30,8 @@ masthead_title: " "
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+#emote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.17.2
 # Outputting
 permalink: /:categories/:title/
 paginate: 20 # amount of posts to show
