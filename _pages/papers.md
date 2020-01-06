@@ -32,9 +32,9 @@ author_profile: true
 
 ## Conference presentations
 
-2019/12 | **Shreevastava, A.**, Bhalachandran, S., Ramamurthy, P., and Rao, P.S.C. (2019, December). Impact of heat waves on intra-urban thermal heterogeneity. *Global Environment Change. AGU Fall Meeting, San Francisco, CA.* (Upcoming)
+2019/12 | **Shreevastava, A.**, Bhalachandran, S., Ramamurthy, P., and Rao, P.S.C. (2019, December). Impact of heat waves on intra-urban thermal heterogeneity. *Global Environment Change. AGU Fall Meeting, San Francisco, CA.*
 
-2019/12 | **Shreevastava, A.**, Bhalachandran, S., McGrath, G.S., Huber, M., and Rao, P.S.C. (2019, December). The paradox of sprawl vs compact urban morphology for mitigating extreme heat in cities. *AGU Fall Meeting, San Francisco, CA.* (Upcoming)
+2019/12 | **Shreevastava, A.**, Bhalachandran, S., McGrath, G.S., Huber, M., and Rao, P.S.C. (2019, December). The paradox of sprawl vs compact urban morphology for mitigating extreme heat in cities. *AGU Fall Meeting, San Francisco, CA.*
 
 2018/12 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2018, December). Fractal topography of the intra-urban thermal landscape. *Nonlinear Geophysics. AGU Fall Meetings, Washington, DC.* (Oral) [link](http://adsabs.harvard.edu/abs/2018AGUFMNG41A..04S){: .btn .btn--inverse} |
 
