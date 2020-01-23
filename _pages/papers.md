@@ -22,7 +22,7 @@ author_profile: true
 2019 | **Shreevastava, A.**, Bhalachandran, S., McGrath, G.S., Huber, M., & Rao, P.S.C. (2019). Paradoxical impact of sprawling intra-Urban Heat Islets: Reducing mean surface temperatures while enhancing local extremes. *Scientific Reports*. [doi](https://www.nature.com/articles/s41598-019-56091-w){: .btn .btn--inverse} [preprint](https://eartharxiv.org/gxj9m/){: .btn .btn--inverse} [dataset](https://osf.io/9srdp/){: .btn .btn--inverse} |
 
 
-2019 | Bhalachandran, S., Chavas, D.R., Marks, F.D., Dubey, S., **Shreevastava, A.**, & Krishnamurti, T.N. (2019). Characterizing the energetics of multiscale asymmetries during tropical cyclone rapid intensity changes. *Journal of Atmospheric Sciences* (in review). [preprint](https://arxiv.org/abs/1908.03618#){: .btn .btn--inverse} [pdf](/assets/files/JAS_arxiv_compressed.pdf){: .btn .btn--inverse} |
+2019 | Bhalachandran, S., Chavas, D.R., Marks, F.D., Dubey, S., **Shreevastava, A.**, & Krishnamurti, T.N. (2019). Characterizing the energetics of multiscale asymmetries during tropical cyclone rapid intensity changes. *Journal of Atmospheric Sciences*. [preprint](https://arxiv.org/abs/1908.03618#){: .btn .btn--inverse} [pdf](/assets/files/JAS_arxiv_compressed.pdf){: .btn .btn--inverse} |
 
 2018 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2018, October). Spatial analysis of the Surface Urban Heat Island. *Land Surface and Cryosphere Remote Sensing* (Vol. 10777, p. 107770C). International Society for Optics and Photonics. [doi](https://doi.org/10.1117/12.2501441){: .btn .btn--inverse} [pdf](/assets/files/SPIE_2018.pdf){: .btn .btn--inverse} |
 
