@@ -198,6 +198,7 @@ Here, I have listed `ungrib.exe` workflow first, and then `geogrid.exe`. These a
   * For Paris, ran into [this error](http://forum.wrfforum.com/viewtopic.php?f=6&t=10010). Solution is listed in the [known problems list](http://www2.mmm.ucar.edu/wrf/users/wrfv3.8/known-prob-3.8.1.html) under ERA-Interim data problem --> In the section `&physics`, add the line `surface_input_source = 1` to overwrite the default value of 3.
   * For LA, ran into NLCD error. Downloading NLCD urban fraction dataset for CONUS from [here](http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html#specific).
   * This creates `wrfbdy_d01`, `wrfinput_d01`, `wrfinput_d02`, and `wrfinput_d03` files. Along with `namelist.output`, `rsl.out` and `rsl.error` files, which will clearly specify the error, or say "SUCCESS COMPLETE REAL_EM INIT" if they are no errors.
+  * NOTE: Print out the sizes of all rsl.error files to check which has the most information. The error files are not all the same. Only the largest one contains most relevant information about a failure (if any).
 
 ## Step 6: Submit WRF run
 
