@@ -16,7 +16,7 @@ excerpt: >
   **NASA Postdoctoral Fellow** studying the impact of extreme heat on cities
   <br>
   <br>
-  I work at the **Jet Propulsion Laboratory**, CalTech, Pasadena
+  Currently at the **Jet Propulsion Laboratory**, CalTech, Pasadena
   <br>  
   <br>
 feature_row:
