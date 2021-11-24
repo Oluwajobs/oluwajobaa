@@ -13,10 +13,10 @@ header:
 excerpt: >
   <br>
   <br>
-  **NASA Earth Science Fellow** studying Urban Complexity.
+  **NASA Postdoctoral Fellow** studying the impact of extreme heat on cities
   <br>
   <br>
-  PhD candidate at **Purdue University** and a digital nomad.
+  I work at the **Jet Propulsion Laboratory**, CalTech, Pasadena
   <br>  
   <br>
 feature_row:
