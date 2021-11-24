@@ -58,7 +58,9 @@ author_profile: true
 
 2020/05 | Extreme Heat and Cities (Invited). *[Phoenix Sustainability Initiative seminar](https://eco.uchicago.edu/2021/04/14/calendar-of-events-phoenix-sustainability-initiative/), University of Chicago, IL, USA.* |
 
-2020/02 | *Winter Workshop on Complex Systems 2020, Charmey, Switzerland*. [link](https://wwcs2020.github.io/){: .btn .btn--inverse} |
+2020/02 | Extreme Heat and Cities (Invited). *Senseable City Lab, MIT, Boston, USA.* |
+
+2020/01 | *Winter Workshop on Complex Systems 2020, Laussane, Switzerland*. [link](https://wwcs2020.github.io/){: .btn .btn--inverse} |
 
 2019/08 | Spatial correlation of inequalities in building energy usage and regions of extreme heat. *Centre for Advaced Spatial Analysis (CASA), University College London (UCL), London, UK*. [link](https://www.ucl.ac.uk/bartlett/casa/news/2019/jun/casa-doctoral-summer-school-advanced-spatial-modelling){: .btn .btn--inverse} |
 
