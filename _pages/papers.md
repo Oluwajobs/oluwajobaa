@@ -17,7 +17,7 @@ author_profile: true
 
 ## Journal publications
 
-2021 | **Shreevastava, A.**, Prasanth, S., Ramamurthy, P., & Rao, P.S.C. (2021). Scale-dependent response of the urban heat island to the European heatwave of 2018. *Environmental Research Letters*. [doi](https://doi.org/10.1088/1748-9326/ac25bb){: .btn .btn--inverse} [presentation](https://ui.adsabs.harvard.edu/abs/2019AGUFMGC13D..02S/abstract){: .btn .btn--inverse} |
+2021 | **Shreevastava, A.**, Prasanth, S., Ramamurthy, P., & Rao, P.S.C. (2021). Scale-dependent response of the urban heat island to the European heatwave of 2018. *Environmental Research Letters*. [doi](https://doi.org/10.1088/1748-9326/ac25bb){: .btn .btn--inverse} |
 
 2019 | **Shreevastava, A.**, Rao, P.S.C., & McGrath, G.S. (2019). Emergent self-similarity and scaling properties of fractal intra-urban heat islets for diverse global cities. *Physical Reviews E*. [doi](https://doi.org/10.1103/PhysRevE.100.032142){: .btn .btn--inverse} [preprint](https://eartharxiv.org/t9s3g){: .btn .btn--inverse} [dataset](https://osf.io/53t2g/){: .btn .btn--inverse} |
 
@@ -34,7 +34,7 @@ author_profile: true
 
 ## Conference presentations
 
-2019/12 | **Shreevastava, A.**, Bhalachandran, S., Ramamurthy, P., and Rao, P.S.C. (2019, December). Impact of heat waves on intra-urban thermal heterogeneity. *Global Environment Change. AGU Fall Meeting, San Francisco, CA.*
+2019/12 | **Shreevastava, A.**, Bhalachandran, S., Ramamurthy, P., and Rao, P.S.C. (2019, December). Impact of heat waves on intra-urban thermal heterogeneity. *Global Environment Change. AGU Fall Meeting, San Francisco, CA.* [link](https://ui.adsabs.harvard.edu/abs/2019AGUFMGC13D..02S/abstract){: .btn .btn--inverse}
 
 2019/12 | **Shreevastava, A.**, Bhalachandran, S., McGrath, G.S., Huber, M., and Rao, P.S.C. (2019, December). The paradox of sprawl vs compact urban morphology for mitigating extreme heat in cities. *AGU Fall Meeting, San Francisco, CA.*
 
