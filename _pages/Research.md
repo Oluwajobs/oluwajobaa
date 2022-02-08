@@ -21,7 +21,8 @@ gallery:
   <img src="/assets/images/Research-Venn.png" alt="Research Venn">
 </figure>
 
-I am a NASA Earth Science Fellow pursuing an interdisciplinary Ph.D. at Purdue University. My research interests are at the intersection of Statistical Physics, Complex Networks, Urban Meteorology, and Remote Sensing. I have a sustained interest in the complexity, inter-dependency, and dynamism of complex socio-technological urban systems, and am passionate about engineering smart, resilient cities. My doctoral thesis is focused on characterizing *intra-urban complexity* of the Urban Heat Island. Prior to my Ph.D., I obtained degrees in Civil and Architectural Engineering from the Indian Institute of Technology and Purdue respectively.
+I am a NASA Postdoctoral Fellow working at the Jet Propulsion Lab, Pasadena. My research interests are at the intersection of Complex Systems, Urban Meteorology, and Remote Sensing. I have a sustained interest in the complexity, inter-dependency, and dynamism of complex socio-technological urban systems, and am passionate about engineering smart, resilient cities. My doctoral thesis is focused on characterizing *intra-urban complexity* of the Urban Heat Island. Prior to my Ph.D., I obtained degrees in Civil and Architectural Engineering from the Indian Institute of Technology and Purdue respectively.
+
 
 
 ## Doctoral Research Themes
