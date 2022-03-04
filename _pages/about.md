@@ -10,7 +10,7 @@ author_profile: true
 
 
 <figure style="width: 300px" class="align-right">
-  <img src="/assets/images/Display pic.jpg" alt="">
+  <img src="/assets/images/Display pic.JPG" alt="">
 </figure>
 
 Hello!! I am Anamika. I am a NASA Postdoctoral Fellow working at the Jet Propulsion Laboratory. I am currently living in Pasadena, California. Here's my [work profile](https://science.jpl.nasa.gov/people/anamika-shreevastava/).
