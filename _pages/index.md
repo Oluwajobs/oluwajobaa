@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 classes: wide
-title: "Anamika Shreevastava"
+title: "Ibrahim Oluwajoba Adisa"
 header:
   overlay_image: assets/city-pics/zach-miles-Y84-eo8drzk-unsplash.jpg
   overlay_filter: 0.6
